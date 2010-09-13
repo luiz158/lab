@@ -1,4 +1,4 @@
-package servlet.math;
+package examples;
 
 import java.io.IOException;
 

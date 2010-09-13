@@ -1,4 +1,4 @@
-package servlet.math;
+package examples;
 
 public class Calculator {
 
@@ -27,6 +27,5 @@ public class Calculator {
 		}
 
 		return result;
-
 	}
 }

@@ -1,4 +1,4 @@
-package servlet.math;
+package examples;
 
 public enum Operation {
 
