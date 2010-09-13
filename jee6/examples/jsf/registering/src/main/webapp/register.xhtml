@@ -1,0 +1,22 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets" template="/template.xhtml">
+
+	<ui:define name="body">
+		<h:form id="form" prependId="false">
+
+			<h:panelGrid columns="3">
+				<h:outputLabel for="name" value="Name" />
+				<h:inputText id="name" value="#{registerBean.register.name}" />
+				<h:message for="name" />
+
+				<h:outputLabel for="cellPhone" value="Cell Phone" />
+				<h:inputText id="cellPhone" value="#{registerBean.register.cellPhone}" />
+				<h:message for="cellPhone" />
+			</h:panelGrid>
+
+			<h:commandButton value="save" action="#{registerBean.save}" />
+		</h:form>
+	</ui:define>
+
+</ui:composition>
