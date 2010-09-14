@@ -64,7 +64,7 @@ public class PersonManagerTest {
 		Person persisted = manager.retrieve(person.getId());
 		
 		Assert.assertNotNull(persisted);
-		Assert.assertEquals(persisted.getName(), person.getName());
+		Assert.assertEquals(person.getName(), persisted.getName());
 	}
 	
 	@Test
@@ -86,7 +86,7 @@ public class PersonManagerTest {
 			manager.create(new Person("person" + i, new Date()));
 		}
 		
-		Assert.assertEquals(manager.retrieve().size(), COUNT);
+		Assert.assertEquals(COUNT, manager.retrieve().size());
 	}
 	
 	@Test
@@ -125,6 +125,6 @@ public class PersonManagerTest {
 		manager.update(person);
 		
 		Person persisted = manager.retrieve(person.getId());
-		Assert.assertEquals(persisted.getName(), person.getName());
+		Assert.assertEquals(person.getName(), persisted.getName());
 	}
 }
