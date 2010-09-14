@@ -4,7 +4,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>lab.jee6.example</groupId>
-	<artifactId>ejb-math</artifactId>
+	<artifactId>ejb-concat</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
 
