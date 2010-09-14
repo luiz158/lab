@@ -19,10 +19,10 @@ public class ConcatServlet extends HttpServlet {
 	
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
-		
 		String result = concatBean.concat(request.getProtocol(), request.getRemoteHost(), new Date().toString());
-		
 		response.getWriter().write("Resultado: " + result.toString());
+		
+		super.service(request, response);
 	}
 	
 }
