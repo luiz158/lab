@@ -1,28 +1,33 @@
 package app.poll;
 
+import java.io.Serializable;
 import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 
 @Entity
-public class Voto {
-	
+@SuppressWarnings("serial")
+public class Voto implements Serializable {
+
 	@Id
 	@GeneratedValue
 	private Long id;
-	
+
 	@NotNull
 	private String ip;
-	
+
 	@NotNull
+	@Temporal(TemporalType.TIME)
 	private Date hora;
-	
+
 	@NotNull
 	private String opcao;
-	
+
 	// Gerado pelo Eclipse
 	@Override
 	public boolean equals(Object obj) {
@@ -45,23 +50,23 @@ public class Voto {
 			return false;
 		return true;
 	}
-	
+
 	public Date getHora() {
 		return hora;
 	}
-	
+
 	public Long getId() {
 		return id;
 	}
-	
+
 	public String getIp() {
 		return ip;
 	}
-	
+
 	public String getOpcao() {
 		return opcao;
 	}
-	
+
 	// Gerado pelo Eclipse
 	@Override
 	public int hashCode() {
@@ -71,21 +76,21 @@ public class Voto {
 		result = prime * result + ((opcao == null) ? 0 : opcao.hashCode());
 		return result;
 	}
-	
+
 	public void setHora(Date hora) {
 		this.hora = hora;
 	}
-	
+
 	public void setId(Long id) {
 		this.id = id;
 	}
-	
+
 	public void setIp(String ip) {
 		this.ip = ip;
 	}
-	
+
 	public void setOpcao(String opcao) {
 		this.opcao = opcao;
 	}
-	
+
 }
