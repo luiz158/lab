@@ -1,6 +1,7 @@
 package examples;
 
 import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
 import javax.inject.Inject;
 
 import br.gov.frameworkdemoiselle.annotation.Name;
@@ -14,11 +15,12 @@ public class MyManagedBean {
 	private Parameter<String> param1;
 
 	@Inject
-	@Name("param2")
 	@RequestScoped
+	@Name("param2")
 	private Parameter<Long> p2;
 
 	@Inject
+	@SessionScoped
 	@Name("param3")
 	private Parameter<Boolean> p3;
 
