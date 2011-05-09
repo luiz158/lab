@@ -7,17 +7,12 @@
 		<h:link value="Link 1">
 			<f:param name="param1" value="Uma frase qualquer" />
 		</h:link>
-		<h:outputText value="#{myManagedBean.param1.value}" />
+		<h:outputText value="#{myManagedBean.param1}" />
 
 		<h:link value="Link 2">
 			<f:param name="param2" value="1" />
 		</h:link>
-		<h:outputText value="#{myManagedBean.param2.value}" />
-
-		<h:link value="Link 3">
-			<f:param name="param3" value="true" />
-		</h:link>
-		<h:outputText value="#{myManagedBean.param3.value}" />
+		<h:outputText value="#{myManagedBean.param2}" />
 	</h:panelGrid>
 </h:body>
 </html>
