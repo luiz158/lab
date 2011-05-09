@@ -16,10 +16,10 @@ public class MyAuthorizator implements Authorizator {
 
 	@Override
 	public boolean hasRole(String role) {
-		String username = context.getUser().getId();
+		String usr = context.getUser().getId();
 		boolean authorized = false;
 
-		if (username.equals("admin") && role.equals("administrators")) {
+		if (usr.equals("admin") && role.equals("administrators")) {
 			authorized = true;
 		}
 
@@ -27,11 +27,11 @@ public class MyAuthorizator implements Authorizator {
 	}
 
 	@Override
-	public boolean hasPermission(Object resource, String operation) {
-		String username = context.getUser().getId();
+	public boolean hasPermission(Object res, String op) {
+		String usr = context.getUser().getId();
 		boolean authorized = false;
 
-		if (username.equals("zyc") && resource.equals("hello") && operation.equals("say")) {
+		if (usr.equals("zyc") && res.equals("hello") && op.equals("say")) {
 			authorized = true;
 		} else if (context.hasRole("administrators")) {
 			authorized = true;
