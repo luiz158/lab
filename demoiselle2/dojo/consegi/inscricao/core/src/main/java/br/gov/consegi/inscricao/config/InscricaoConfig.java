@@ -1,4 +1,4 @@
-package br.gov.consegi.inscricao;
+package br.gov.consegi.inscricao.config;
 
 import br.gov.frameworkdemoiselle.configuration.Configuration;
 

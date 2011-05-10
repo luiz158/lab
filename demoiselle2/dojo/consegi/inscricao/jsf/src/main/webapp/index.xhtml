@@ -1,11 +1,26 @@
-<ui:composition xmlns="http://www.w3.org/1999/xhtml" xmlns:f="http://java.sun.com/jsf/core"
-	xmlns:p="http://primefaces.prime.com.tr/ui" xmlns:h="http://java.sun.com/jsf/html"
-	xmlns:ui="http://java.sun.com/jsf/facelets" template="/template/main.xhtml">
+<html xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.prime.com.tr/ui"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
 
-	<ui:define name="body">
-		<p:panel>
-			#{messages['bookmark-welcome']}
-		</p:panel>
-	</ui:define>
+<f:view contentType="text/html" locale="#currentLocale" />
 
-</ui:composition>
+<h:head>
+	<link type="text/css" rel="stylesheet" href="css/styles.css" />
+</h:head>
+
+<h:body>
+	Incrições do curso Demoiselle
+	
+	<h:form>
+		<h:inputText value="#{inscricaoMB.aluno}" />
+		<h:commandButton action="#{inscricaoMB.cadastrar}" value="Cadastrar" />
+	
+		<p:dataTable value="#{inscricaoMB.inscritos}" var="aluno">
+			<p:column>
+				#{aluno}
+			</p:column>
+		</p:dataTable>
+	</h:form>
+</h:body>
+</html>

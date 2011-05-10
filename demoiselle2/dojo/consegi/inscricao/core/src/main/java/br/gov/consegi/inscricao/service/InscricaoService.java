@@ -1,16 +1,21 @@
-package br.gov.consegi.inscricao;
+package br.gov.consegi.inscricao.service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
 
+import br.gov.consegi.inscricao.config.InscricaoConfig;
 import br.gov.frameworkdemoiselle.annotation.Startup;
+import br.gov.frameworkdemoiselle.stereotype.BusinessController;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
-public class Inscricao {
+@ApplicationScoped
+@BusinessController
+public class InscricaoService {
 
 	@Inject
 	private Logger log;
@@ -41,5 +46,9 @@ public class Inscricao {
 
 	public int getQtdInscritos() {
 		return inscritos.size();
+	}
+
+	public List<String> getInscritos() {
+		return inscritos;
 	}
 }

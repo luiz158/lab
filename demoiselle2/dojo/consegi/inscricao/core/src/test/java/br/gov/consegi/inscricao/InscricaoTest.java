@@ -5,45 +5,45 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import br.gov.consegi.inscricao.Inscricao;
+import br.gov.consegi.inscricao.service.InscricaoService;
 import br.gov.frameworkdemoiselle.util.Beans;
 import br.gov.frameworkdemoiselle.util.DemoiselleRunner;
 
 @RunWith(DemoiselleRunner.class)
 public class InscricaoTest {
 
-	private Inscricao inscricao;
+	private InscricaoService service;
 
 	@Before
 	public void prepara() {
-		inscricao = Beans.getReference(Inscricao.class);
+		service = Beans.getReference(InscricaoService.class);
 	}
 
 	@Test
-	public void cadastrarComSucesso() {
-		inscricao.cadastrar("Wilson");
-		Assert.assertTrue(inscricao.estaInscrito("Wilson"));
+	public void cadastraComSucesso() {
+		service.cadastrar("Wilson");
+		Assert.assertTrue(service.estaInscrito("Wilson"));
 	}
 
 	@Test
 	public void verificaAlunoNaoCadastrado() {
-		Assert.assertFalse(inscricao.estaInscrito("Super-man"));
+		Assert.assertFalse(service.estaInscrito("Super-man"));
 	}
 
 	@Test
 	public void naoCadastraDuplicado() {
-		inscricao.cadastrar("Serge");
-		inscricao.cadastrar("Serge");
-		Assert.assertEquals(1, inscricao.getQtdInscritos());
+		service.cadastrar("Serge");
+		service.cadastrar("Serge");
+		Assert.assertEquals(1, service.getQtdInscritos());
 	}
 
 	@Test
 	public void cadastrarComLimiteExcedido() {
-		inscricao.cadastrar("Jiraya");
-		inscricao.cadastrar("Jaspion");
-		inscricao.cadastrar("Godzilla");
-		inscricao.cadastrar("Satan Goss");
-		Assert.assertFalse(inscricao.estaInscrito("Satan Goss"));
+		service.cadastrar("Jiraya");
+		service.cadastrar("Jaspion");
+		service.cadastrar("Godzilla");
+		service.cadastrar("Satan Goss");
+		Assert.assertFalse(service.estaInscrito("Satan Goss"));
 	}
 
 }
