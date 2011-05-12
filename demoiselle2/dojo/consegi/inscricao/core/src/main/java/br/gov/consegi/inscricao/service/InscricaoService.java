@@ -9,6 +9,8 @@ import javax.inject.Inject;
 import org.slf4j.Logger;
 
 import br.gov.consegi.inscricao.config.InscricaoConfig;
+import br.gov.consegi.inscricao.exception.AlunoJaInscritoException;
+import br.gov.consegi.inscricao.exception.SalaLotadaException;
 import br.gov.frameworkdemoiselle.annotation.Startup;
 import br.gov.frameworkdemoiselle.stereotype.BusinessController;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
@@ -33,10 +35,23 @@ public class InscricaoService {
 		log.info("Ninguem chamou esse cara!");
 	}
 
-	public void cadastrar(String aluno) {
-		if (inscritos.size() < config.getTamanhoSala() && !inscritos.contains(aluno)) {
-			inscritos.add(aluno);
-			log.info(bundle.getString("cadastro.sucesso", aluno));
+	public void cadastrar(String aluno) throws SalaLotadaException, AlunoJaInscritoException {
+		if (inscritos.size() == config.getTamanhoSala()) {
+			throw new SalaLotadaException();
+		}
+
+		if (inscritos.contains(aluno)) {
+			throw new AlunoJaInscritoException();
+		}
+
+		inscritos.add(aluno);
+		log.info(bundle.getString("cadastro.sucesso", aluno));
+	}
+
+	public void descadastrar(String aluno) {
+		if (inscritos.contains(aluno)) {
+			inscritos.remove(aluno);
+			log.info(bundle.getString("descadastro.sucesso", aluno));
 		}
 	}
 
