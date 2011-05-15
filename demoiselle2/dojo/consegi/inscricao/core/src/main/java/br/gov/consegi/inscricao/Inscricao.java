@@ -1,4 +1,4 @@
-package br.gov.consegi.inscricao.service;
+package br.gov.consegi.inscricao;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,16 +8,13 @@ import javax.inject.Inject;
 
 import org.slf4j.Logger;
 
-import br.gov.consegi.inscricao.config.InscricaoConfig;
-import br.gov.consegi.inscricao.exception.AlunoJaInscritoException;
-import br.gov.consegi.inscricao.exception.SalaLotadaException;
 import br.gov.frameworkdemoiselle.annotation.Startup;
 import br.gov.frameworkdemoiselle.stereotype.BusinessController;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
 @ApplicationScoped
 @BusinessController
-public class InscricaoService {
+public class Inscricao {
 
 	@Inject
 	private Logger log;
@@ -35,13 +32,13 @@ public class InscricaoService {
 		log.info("Ninguem chamou esse cara!");
 	}
 
-	public void cadastrar(String aluno) throws SalaLotadaException, AlunoJaInscritoException {
+	public void cadastrar(String aluno) throws SalaLotadaException, AlunoDuplicadoException {
 		if (inscritos.size() == config.getTamanhoSala()) {
 			throw new SalaLotadaException();
 		}
 
 		if (inscritos.contains(aluno)) {
-			throw new AlunoJaInscritoException();
+			throw new AlunoDuplicadoException();
 		}
 
 		inscritos.add(aluno);

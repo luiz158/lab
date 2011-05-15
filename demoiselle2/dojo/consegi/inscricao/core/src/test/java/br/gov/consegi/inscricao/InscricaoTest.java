@@ -10,9 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 
-import br.gov.consegi.inscricao.exception.AlunoJaInscritoException;
-import br.gov.consegi.inscricao.exception.SalaLotadaException;
-import br.gov.consegi.inscricao.service.InscricaoService;
 import br.gov.frameworkdemoiselle.util.Beans;
 import br.gov.frameworkdemoiselle.util.DemoiselleRunner;
 
@@ -22,11 +19,11 @@ public class InscricaoTest {
 	@Inject
 	private Logger logger;
 
-	private InscricaoService service;
+	private Inscricao service;
 
 	@Before
 	public void prepara() {
-		service = Beans.getReference(InscricaoService.class);
+		service = Beans.getReference(Inscricao.class);
 	}
 
 	@Test
@@ -48,13 +45,13 @@ public class InscricaoTest {
 			Assert.assertEquals(1, service.getQtdInscritos());
 
 			fail("Deveria dar erro");
-		} catch (AlunoJaInscritoException cause) {
+		} catch (AlunoDuplicadoException cause) {
 			logger.info(cause.getMessage());
 		}
 	}
 
 	@Test
-	public void cadastrarComLimiteExcedido() throws AlunoJaInscritoException {
+	public void cadastrarComLimiteExcedido() throws AlunoDuplicadoException {
 		try {
 			service.cadastrar("Jiraya");
 			service.cadastrar("Jaspion");
