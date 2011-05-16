@@ -10,7 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;
 
-import br.gov.frameworkdemoiselle.util.Beans;
 import br.gov.frameworkdemoiselle.util.DemoiselleRunner;
 
 @RunWith(DemoiselleRunner.class)
@@ -19,48 +18,83 @@ public class InscricaoTest {
 	@Inject
 	private Logger logger;
 
-	private Inscricao service;
+	@Inject
+	private InscricaoConfig config;
+
+	@Inject
+	private Inscricao inscricao;
 
 	@Before
-	public void prepara() {
-		service = Beans.getReference(Inscricao.class);
+	public void setUp() {
+		for (String aluno : inscricao.getInscritos()) {
+			inscricao.descadastrar(aluno);
+		}
 	}
 
 	@Test
-	public void cadastraComSucesso() throws Exception {
-		service.cadastrar("Wilson");
-		Assert.assertTrue(service.estaInscrito("Wilson"));
+	public void cadastrarAlunoComSucesso() {
+		inscricao.cadastrar("Wilson");
+		Assert.assertTrue(inscricao.getInscritos().contains("Wilson"));
 	}
 
 	@Test
-	public void verificaAlunoNaoCadastrado() {
-		Assert.assertFalse(service.estaInscrito("Super-man"));
-	}
-
-	@Test
-	public void naoCadastraDuplicado() throws SalaLotadaException {
+	public void cadastrarAlunoJaInscrito() {
+		inscricao.cadastrar("Serge");
 		try {
-			service.cadastrar("Serge");
-			service.cadastrar("Serge");
-			Assert.assertEquals(1, service.getQtdInscritos());
-
-			fail("Deveria dar erro");
+			inscricao.cadastrar("Serge");
+			fail();
 		} catch (AlunoDuplicadoException cause) {
+			logger.info(cause.getMessage());
+		}
+	}
+	
+	@Test
+	public void cadastrarAlunoComNomeEmBranco() {
+		try {
+			inscricao.cadastrar("");
+			fail();
+		} catch (CampoObrigatorioException cause) {
 			logger.info(cause.getMessage());
 		}
 	}
 
 	@Test
-	public void cadastrarComLimiteExcedido() throws AlunoDuplicadoException {
-		try {
-			service.cadastrar("Jiraya");
-			service.cadastrar("Jaspion");
-			service.cadastrar("Godzilla");
-			service.cadastrar("Satan Goss");
-			Assert.assertFalse(service.estaInscrito("Satan Goss"));
+	public void cadastrarAlemDoLimiteDaSala() {
+		for (int i = 0; i < config.getTamanhoSala(); i++) {
+			inscricao.cadastrar("aluno" + i);
+		}
 
-			fail("Deveria dar erro");
+		try {
+			inscricao.cadastrar("Um aluno a mais");
+			fail();
 		} catch (SalaLotadaException cause) {
+			logger.info(cause.getMessage());
+		}
+	}
+	
+	@Test
+	public void descadatrarAlunoCadastrado() {
+		for (int i = 0; i < config.getTamanhoSala(); i++) {
+			inscricao.cadastrar("aluno" + i);
+		}
+		
+		try {
+			inscricao.descadastrar(inscricao.getInscritos().get(0));
+		} catch (AlunoNaoCadastradoException e) {
+			fail();
+		}
+	}
+	
+	@Test
+	public void descadatrarAlunoNaoCadastrado() {
+		for (int i = 0; i < config.getTamanhoSala(); i++) {
+			inscricao.cadastrar("aluno" + i);
+		}
+		
+		try {
+			inscricao.descadastrar("Aluno nao cadastrado");
+			fail();
+		} catch (AlunoNaoCadastradoException cause) {
 			logger.info(cause.getMessage());
 		}
 	}

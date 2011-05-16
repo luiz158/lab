@@ -6,13 +6,14 @@ import br.gov.frameworkdemoiselle.util.Beans;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
 @ApplicationException(severity = ERROR)
-public class SalaLotadaException extends RuntimeException {
-
-	private static final long serialVersionUID = 1L;
-
+public class CampoObrigatorioException extends RuntimeException {
+	
+private static final long serialVersionUID = 1L;
+	
 	private static ResourceBundle bundle = Beans.getReference(ResourceBundle.class);
 
-	public SalaLotadaException() {
-		super(bundle.getString("sala.lotada"));
+	public CampoObrigatorioException(String campo) {
+		super(bundle.getString("campo.obrigatorio.nao.preenchido", campo));
 	}
+
 }

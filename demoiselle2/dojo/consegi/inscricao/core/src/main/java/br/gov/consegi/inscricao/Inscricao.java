@@ -8,7 +8,6 @@ import javax.inject.Inject;
 
 import org.slf4j.Logger;
 
-import br.gov.frameworkdemoiselle.annotation.Startup;
 import br.gov.frameworkdemoiselle.stereotype.BusinessController;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
@@ -27,18 +26,17 @@ public class Inscricao {
 
 	private List<String> inscritos = new ArrayList<String>();
 
-	@Startup
-	public void init() {
-		log.info("Ninguem chamou esse cara!");
-	}
-
-	public void cadastrar(String aluno) throws SalaLotadaException, AlunoDuplicadoException {
-		if (inscritos.size() == config.getTamanhoSala()) {
-			throw new SalaLotadaException();
+	public void cadastrar(String aluno) {
+		if (aluno.trim().isEmpty()) {
+			throw new CampoObrigatorioException("nome");
+		}
+		
+		if (verificaAlunoInscrito(aluno)) {
+			throw new AlunoDuplicadoException(aluno);
 		}
 
-		if (inscritos.contains(aluno)) {
-			throw new AlunoDuplicadoException();
+		if (isSalaLotada()) {
+			throw new SalaLotadaException();
 		}
 
 		inscritos.add(aluno);
@@ -46,21 +44,24 @@ public class Inscricao {
 	}
 
 	public void descadastrar(String aluno) {
-		if (inscritos.contains(aluno)) {
+		if (verificaAlunoInscrito(aluno)) {
 			inscritos.remove(aluno);
 			log.info(bundle.getString("descadastro.sucesso", aluno));
+		} else {
+			throw new AlunoNaoCadastradoException(aluno);
 		}
 	}
 
-	public boolean estaInscrito(String aluno) {
+	public boolean verificaAlunoInscrito(String aluno) {
 		return inscritos.contains(aluno);
 	}
 
-	public int getQtdInscritos() {
-		return inscritos.size();
+	public boolean isSalaLotada() {
+		return inscritos.size() == config.getTamanhoSala();
 	}
 
 	public List<String> getInscritos() {
-		return inscritos;
+		return new ArrayList<String>(inscritos);
 	}
+
 }

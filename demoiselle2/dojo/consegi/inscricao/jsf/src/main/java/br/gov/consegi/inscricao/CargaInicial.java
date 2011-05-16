@@ -10,7 +10,7 @@ public class CargaInicial {
 	private Inscricao inscricao;
 
 	@Startup
-	public void carregar() throws SalaLotadaException, AlunoDuplicadoException {
+	public void carregar() {
 		inscricao.cadastrar("Wilson");
 		inscricao.cadastrar("ZyC");
 	}

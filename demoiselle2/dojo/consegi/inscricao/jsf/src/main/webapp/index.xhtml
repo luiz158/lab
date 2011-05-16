@@ -10,17 +10,23 @@
 </h:head>
 
 <h:body>
+	<p:growl />
 	Incrições do curso Demoiselle
 	
 	<h:form>
-		<h:inputText value="#{inscricaoMB.aluno}" />
+		<h:inputText id="name" value="#{inscricaoMB.aluno}" />
 		<h:commandButton action="#{inscricaoMB.cadastrar}" value="Cadastrar" />
 	
-		<p:dataTable value="#{inscricaoMB.inscritos}" var="aluno">
+		<p:dataTable value="#{inscricaoMB.inscritos}" var="aluno" >
+			<p:column style="width:1%;">
+				<h:selectBooleanCheckbox value="#{inscricaoMB.selection[aluno]}"></h:selectBooleanCheckbox>
+			</p:column>
 			<p:column>
 				#{aluno}
 			</p:column>
 		</p:dataTable>
+		
+		<h:commandButton action="#{inscricaoMB.excluir}" value="Excluir" />
 	</h:form>
 </h:body>
 </html>

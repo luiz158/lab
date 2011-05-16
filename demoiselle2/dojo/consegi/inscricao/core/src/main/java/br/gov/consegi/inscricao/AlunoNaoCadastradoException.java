@@ -6,13 +6,14 @@ import br.gov.frameworkdemoiselle.util.Beans;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
 @ApplicationException(severity = ERROR)
-public class SalaLotadaException extends RuntimeException {
+public class AlunoNaoCadastradoException extends RuntimeException {
 
-	private static final long serialVersionUID = 1L;
-
+private static final long serialVersionUID = 1L;
+	
 	private static ResourceBundle bundle = Beans.getReference(ResourceBundle.class);
 
-	public SalaLotadaException() {
-		super(bundle.getString("sala.lotada"));
+	public AlunoNaoCadastradoException(String aluno) {
+		super(bundle.getString("aluno.nao.cadastrado", aluno));
 	}
+	
 }
