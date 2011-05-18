@@ -7,11 +7,12 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
+#import "Inscricao.h"
 
 
 @interface InscricaoTest : SenTestCase {
-@private
-    
+
+    Inscricao *inscricao;
 }
 
 @end

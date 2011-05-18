@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6229A1EB138428C200CE72E7 /* Aluno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6229A1EA138428C200CE72E7 /* Aluno.m */; };
+		6229A1EC138428C200CE72E7 /* Aluno.m in Sources */ = {isa = PBXBuildFile; fileRef = 6229A1EA138428C200CE72E7 /* Aluno.m */; };
 		6293E5C71383DC1F00DC8903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6293E5C61383DC1F00DC8903 /* Foundation.framework */; };
 		6293E5CA1383DC1F00DC8903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6293E5C91383DC1F00DC8903 /* main.m */; };
 		62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED444A1383DF9F001D7202 /* Inscricao.m */; };
@@ -34,6 +36,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6229A1E7138426FC00CE72E7 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		6229A1E9138428C200CE72E7 /* Aluno.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Aluno.h; path = Inscricao/Aluno.h; sourceTree = "<group>"; };
+		6229A1EA138428C200CE72E7 /* Aluno.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Aluno.m; path = Inscricao/Aluno.m; sourceTree = "<group>"; };
 		6293E5C21383DC1F00DC8903 /* Inscricao */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Inscricao; sourceTree = BUILT_PRODUCTS_DIR; };
 		6293E5C61383DC1F00DC8903 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6293E5C91383DC1F00DC8903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -80,7 +85,7 @@
 		6293E5B71383DC1F00DC8903 = {
 			isa = PBXGroup;
 			children = (
-				62ED44C61383E3E3001D7202 /* Classes */,
+				62ED44C61383E3E3001D7202 /* Source */,
 				62ED44A11383E20E001D7202 /* Test */,
 				6293E5C81383DC1F00DC8903 /* Resources */,
 				6293E5C51383DC1F00DC8903 /* Frameworks */,
@@ -110,6 +115,7 @@
 		6293E5C81383DC1F00DC8903 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				6229A1E7138426FC00CE72E7 /* Constants.h */,
 				6293E5C91383DC1F00DC8903 /* main.m */,
 				6293E5CD1383DC1F00DC8903 /* Inscricao.1 */,
 				6293E5CB1383DC1F00DC8903 /* Supporting Files */,
@@ -157,7 +163,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		62ED44C61383E3E3001D7202 /* Classes */ = {
+		62ED44C61383E3E3001D7202 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				62ED44D51383F3E9001D7202 /* AlunoDuplicadoException.h */,
@@ -166,8 +172,10 @@
 				62ED44D21383F3BF001D7202 /* SalaCheiaException.m */,
 				62ED44491383DF9F001D7202 /* Inscricao.h */,
 				62ED444A1383DF9F001D7202 /* Inscricao.m */,
+				6229A1E9138428C200CE72E7 /* Aluno.h */,
+				6229A1EA138428C200CE72E7 /* Aluno.m */,
 			);
-			name = Classes;
+			name = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +276,7 @@
 				62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */,
 				62ED44D31383F3BF001D7202 /* SalaCheiaException.m in Sources */,
 				62ED44D71383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */,
+				6229A1EB138428C200CE72E7 /* Aluno.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +288,7 @@
 				62ED44AB1383E20E001D7202 /* InscricaoTest.m in Sources */,
 				62ED44D41383F3BF001D7202 /* SalaCheiaException.m in Sources */,
 				62ED44D81383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */,
+				6229A1EC138428C200CE72E7 /* Aluno.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +432,7 @@
 				62ED44AE1383E20E001D7202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

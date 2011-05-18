@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import "Constants.h"
 #import "Inscricao.h"
 #import "SalaCheiaException.h"
 #import "AlunoDuplicadoException.h"
@@ -21,21 +22,28 @@
     return self;
 }
 
--(void)cadastrar:(NSString *) aluno {
-    if([inscritos count] > 1){       
+-(BOOL)estaInscrito:(Aluno *) aluno {
+    return [inscritos containsObject:aluno];
+}
+
+-(void)cadastrar:(Aluno *) aluno {
+    if([self salaLotada]) {       
         @throw [[SalaCheiaException alloc] initWithLotacao:[inscritos count]];
     }
     
-    if([inscritos containsObject:aluno]){
+    if([self estaInscrito:aluno]) {
         @throw [[AlunoDuplicadoException alloc] initWithAluno:aluno];
     }
     
     [inscritos addObject:aluno];
 }
 
+- (BOOL)salaLotada {
+    return [inscritos count] == LOTACAO_SALA;
+}
+
 - (void)dealloc {
     [inscritos release];
-    
     [super dealloc];
 }
 

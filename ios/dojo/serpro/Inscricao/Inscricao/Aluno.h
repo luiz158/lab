@@ -1,5 +1,5 @@
 //
-//  SalaCheiaException.h
+//  Aluno.h
 //  Inscricao
 //
 //  Created by Cleverson Sacramento on 18/05/11.
@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 
 
-@interface SalaCheiaException : NSException {
-    
-    int lotacao;
+@interface Aluno : NSObject {
 }
 
-- (id) initWithLotacao:(int) lotacao;
+@property (assign) NSString *nome;
+
+@property (assign) NSString *cpf;
+
+- (id)initWithNome:(NSString *) nome andCpf: (NSString *) cpf;
 
 @end
