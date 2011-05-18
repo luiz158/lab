@@ -26,6 +26,9 @@ public class Inscricao {
 
 	private List<String> inscritos = new ArrayList<String>();
 
+	/**
+	 * @param aluno
+	 */
 	public void cadastrar(String aluno) {
 		if (aluno.trim().isEmpty()) {
 			throw new CampoObrigatorioException("nome");
