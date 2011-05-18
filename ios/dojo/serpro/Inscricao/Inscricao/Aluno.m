@@ -37,8 +37,4 @@
     return FALSE;
 }
 
-- (void)dealloc {
-    [super dealloc];
-}
-
 @end
