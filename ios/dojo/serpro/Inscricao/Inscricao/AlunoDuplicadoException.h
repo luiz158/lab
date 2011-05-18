@@ -7,13 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "Aluno.h"
 
 @interface AlunoDuplicadoException : NSException {
-
-    NSString *aluno;
+    
+    Aluno *aluno;
 }
 
-- (id) initWithAluno:(NSString *) aluno;
+- (id) initWithAluno:(Aluno *) aluno;
 
 @end

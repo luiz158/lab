@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Aluno.h"
 
 
 @interface Inscricao : NSObject {
     
-        NSMutableArray *inscritos;
+    NSMutableArray *inscritos;
 }
 
--(void)cadastrar:(NSString *) aluno;
+-(void)cadastrar:(Aluno *) aluno;
 
+-(BOOL)estaInscrito:(Aluno *) aluno;
+
+-(BOOL)salaLotada;
 
 @end

@@ -7,12 +7,13 @@
 //
 
 #import "AlunoDuplicadoException.h"
+#import "Aluno.h"
 
 
 @implementation AlunoDuplicadoException
 
-- (id) initWithAluno:(NSString *) aAluno {
-    NSString *message = [@"Aluno duplicado: " stringByAppendingString:aAluno];
+- (id) initWithAluno:(Aluno *) aAluno {
+    NSString *message = [@"Aluno duplicado: " stringByAppendingString:aAluno.nome];
     self = [super initWithName:@"AlunoDuplicadoException" reason:message userInfo:nil];
     [message release];
     
