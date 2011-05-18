@@ -15,10 +15,10 @@
 		62ED44A91383E20E001D7202 /* InscricaoTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 62ED44A81383E20E001D7202 /* InscricaoTest.h */; };
 		62ED44AB1383E20E001D7202 /* InscricaoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44AA1383E20E001D7202 /* InscricaoTest.m */; };
 		62ED44C71383E6FE001D7202 /* Inscricao.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED444A1383DF9F001D7202 /* Inscricao.m */; };
-		62ED44CA1383ED59001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44C91383ED59001D7202 /* SalaCheiaException.m */; };
-		62ED44CB1383ED59001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44C91383ED59001D7202 /* SalaCheiaException.m */; };
-		62ED44CE1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */; };
-		62ED44CF1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */; };
+		62ED44D31383F3BF001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44D21383F3BF001D7202 /* SalaCheiaException.m */; };
+		62ED44D41383F3BF001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44D21383F3BF001D7202 /* SalaCheiaException.m */; };
+		62ED44D71383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44D61383F3E9001D7202 /* AlunoDuplicadoException.m */; };
+		62ED44D81383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44D61383F3E9001D7202 /* AlunoDuplicadoException.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,10 +51,10 @@
 		62ED44A71383E20E001D7202 /* InscricaoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InscricaoTest-Prefix.pch"; sourceTree = "<group>"; };
 		62ED44A81383E20E001D7202 /* InscricaoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InscricaoTest.h; sourceTree = "<group>"; };
 		62ED44AA1383E20E001D7202 /* InscricaoTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InscricaoTest.m; sourceTree = "<group>"; };
-		62ED44C81383ED59001D7202 /* SalaCheiaException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalaCheiaException.h; path = InscricaoTest/SalaCheiaException.h; sourceTree = "<group>"; };
-		62ED44C91383ED59001D7202 /* SalaCheiaException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalaCheiaException.m; path = InscricaoTest/SalaCheiaException.m; sourceTree = "<group>"; };
-		62ED44CC1383EFB2001D7202 /* AlunoDuplicadoException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlunoDuplicadoException.h; sourceTree = "<group>"; };
-		62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlunoDuplicadoException.m; sourceTree = "<group>"; };
+		62ED44D11383F3BF001D7202 /* SalaCheiaException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalaCheiaException.h; path = Inscricao/SalaCheiaException.h; sourceTree = "<group>"; };
+		62ED44D21383F3BF001D7202 /* SalaCheiaException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalaCheiaException.m; path = Inscricao/SalaCheiaException.m; sourceTree = "<group>"; };
+		62ED44D51383F3E9001D7202 /* AlunoDuplicadoException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AlunoDuplicadoException.h; path = Inscricao/AlunoDuplicadoException.h; sourceTree = "<group>"; };
+		62ED44D61383F3E9001D7202 /* AlunoDuplicadoException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AlunoDuplicadoException.m; path = Inscricao/AlunoDuplicadoException.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,12 +160,12 @@
 		62ED44C61383E3E3001D7202 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				62ED44D51383F3E9001D7202 /* AlunoDuplicadoException.h */,
+				62ED44D61383F3E9001D7202 /* AlunoDuplicadoException.m */,
+				62ED44D11383F3BF001D7202 /* SalaCheiaException.h */,
+				62ED44D21383F3BF001D7202 /* SalaCheiaException.m */,
 				62ED44491383DF9F001D7202 /* Inscricao.h */,
 				62ED444A1383DF9F001D7202 /* Inscricao.m */,
-				62ED44C81383ED59001D7202 /* SalaCheiaException.h */,
-				62ED44C91383ED59001D7202 /* SalaCheiaException.m */,
-				62ED44CC1383EFB2001D7202 /* AlunoDuplicadoException.h */,
-				62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -266,8 +266,8 @@
 			files = (
 				6293E5CA1383DC1F00DC8903 /* main.m in Sources */,
 				62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */,
-				62ED44CA1383ED59001D7202 /* SalaCheiaException.m in Sources */,
-				62ED44CE1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */,
+				62ED44D31383F3BF001D7202 /* SalaCheiaException.m in Sources */,
+				62ED44D71383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,8 +277,8 @@
 			files = (
 				62ED44C71383E6FE001D7202 /* Inscricao.m in Sources */,
 				62ED44AB1383E20E001D7202 /* InscricaoTest.m in Sources */,
-				62ED44CB1383ED59001D7202 /* SalaCheiaException.m in Sources */,
-				62ED44CF1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */,
+				62ED44D41383F3BF001D7202 /* SalaCheiaException.m in Sources */,
+				62ED44D81383F3E9001D7202 /* AlunoDuplicadoException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

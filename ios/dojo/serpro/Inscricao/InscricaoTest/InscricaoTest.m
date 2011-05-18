@@ -31,7 +31,7 @@
     Inscricao *inscricao = [[Inscricao alloc] init];
     
     [inscricao cadastrar:@"olá"];
-    [inscricao cadastrar:@"olá2"];
+    //[inscricao cadastrar:@"olá2"];
     [inscricao cadastrar:@"olá"];
     
     [inscricao release];
