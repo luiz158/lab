@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>InscricaoTest.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>6293E5C11383DC1F00DC8903</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>62ED44991383E20E001D7202</key>
 		<dict>
 			<key>primary</key>
 			<true/>
