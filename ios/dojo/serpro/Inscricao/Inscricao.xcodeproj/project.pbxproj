@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6293E5C71383DC1F00DC8903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6293E5C61383DC1F00DC8903 /* Foundation.framework */; };
 		6293E5CA1383DC1F00DC8903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6293E5C91383DC1F00DC8903 /* main.m */; };
+		62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED444A1383DF9F001D7202 /* Inscricao.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,8 @@
 		6293E5C91383DC1F00DC8903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6293E5CC1383DC1F00DC8903 /* Inscricao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inscricao-Prefix.pch"; sourceTree = "<group>"; };
 		6293E5CD1383DC1F00DC8903 /* Inscricao.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Inscricao.1; sourceTree = "<group>"; };
+		62ED44491383DF9F001D7202 /* Inscricao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inscricao.h; sourceTree = "<group>"; };
+		62ED444A1383DF9F001D7202 /* Inscricao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inscricao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,8 @@
 				6293E5C91383DC1F00DC8903 /* main.m */,
 				6293E5CD1383DC1F00DC8903 /* Inscricao.1 */,
 				6293E5CB1383DC1F00DC8903 /* Supporting Files */,
+				62ED44491383DF9F001D7202 /* Inscricao.h */,
+				62ED444A1383DF9F001D7202 /* Inscricao.m */,
 			);
 			path = Inscricao;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6293E5CA1383DC1F00DC8903 /* main.m in Sources */,
+				62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,6 +223,7 @@
 				6293E5D21383DC1F00DC8903 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
