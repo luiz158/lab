@@ -10,6 +10,15 @@
 		6293E5C71383DC1F00DC8903 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6293E5C61383DC1F00DC8903 /* Foundation.framework */; };
 		6293E5CA1383DC1F00DC8903 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6293E5C91383DC1F00DC8903 /* main.m */; };
 		62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED444A1383DF9F001D7202 /* Inscricao.m */; };
+		62ED449C1383E20E001D7202 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62ED449B1383E20E001D7202 /* Cocoa.framework */; };
+		62ED44A61383E20E001D7202 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 62ED44A41383E20E001D7202 /* InfoPlist.strings */; };
+		62ED44A91383E20E001D7202 /* InscricaoTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 62ED44A81383E20E001D7202 /* InscricaoTest.h */; };
+		62ED44AB1383E20E001D7202 /* InscricaoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44AA1383E20E001D7202 /* InscricaoTest.m */; };
+		62ED44C71383E6FE001D7202 /* Inscricao.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED444A1383DF9F001D7202 /* Inscricao.m */; };
+		62ED44CA1383ED59001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44C91383ED59001D7202 /* SalaCheiaException.m */; };
+		62ED44CB1383ED59001D7202 /* SalaCheiaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44C91383ED59001D7202 /* SalaCheiaException.m */; };
+		62ED44CE1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */; };
+		62ED44CF1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -30,8 +39,22 @@
 		6293E5C91383DC1F00DC8903 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6293E5CC1383DC1F00DC8903 /* Inscricao-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Inscricao-Prefix.pch"; sourceTree = "<group>"; };
 		6293E5CD1383DC1F00DC8903 /* Inscricao.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Inscricao.1; sourceTree = "<group>"; };
-		62ED44491383DF9F001D7202 /* Inscricao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inscricao.h; sourceTree = "<group>"; };
-		62ED444A1383DF9F001D7202 /* Inscricao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Inscricao.m; sourceTree = "<group>"; };
+		62ED44491383DF9F001D7202 /* Inscricao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Inscricao.h; path = Inscricao/Inscricao.h; sourceTree = "<group>"; };
+		62ED444A1383DF9F001D7202 /* Inscricao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Inscricao.m; path = Inscricao/Inscricao.m; sourceTree = "<group>"; };
+		62ED449A1383E20E001D7202 /* InscricaoTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InscricaoTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		62ED449B1383E20E001D7202 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		62ED449E1383E20E001D7202 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		62ED449F1383E20E001D7202 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		62ED44A01383E20E001D7202 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		62ED44A31383E20E001D7202 /* InscricaoTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "InscricaoTest-Info.plist"; sourceTree = "<group>"; };
+		62ED44A51383E20E001D7202 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		62ED44A71383E20E001D7202 /* InscricaoTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "InscricaoTest-Prefix.pch"; sourceTree = "<group>"; };
+		62ED44A81383E20E001D7202 /* InscricaoTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InscricaoTest.h; sourceTree = "<group>"; };
+		62ED44AA1383E20E001D7202 /* InscricaoTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InscricaoTest.m; sourceTree = "<group>"; };
+		62ED44C81383ED59001D7202 /* SalaCheiaException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SalaCheiaException.h; path = InscricaoTest/SalaCheiaException.h; sourceTree = "<group>"; };
+		62ED44C91383ED59001D7202 /* SalaCheiaException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SalaCheiaException.m; path = InscricaoTest/SalaCheiaException.m; sourceTree = "<group>"; };
+		62ED44CC1383EFB2001D7202 /* AlunoDuplicadoException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlunoDuplicadoException.h; sourceTree = "<group>"; };
+		62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlunoDuplicadoException.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,13 +66,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		62ED44961383E20E001D7202 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62ED449C1383E20E001D7202 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		6293E5B71383DC1F00DC8903 = {
 			isa = PBXGroup;
 			children = (
-				6293E5C81383DC1F00DC8903 /* Inscricao */,
+				62ED44C61383E3E3001D7202 /* Classes */,
+				62ED44A11383E20E001D7202 /* Test */,
+				6293E5C81383DC1F00DC8903 /* Resources */,
 				6293E5C51383DC1F00DC8903 /* Frameworks */,
 				6293E5C31383DC1F00DC8903 /* Products */,
 			);
@@ -59,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				6293E5C21383DC1F00DC8903 /* Inscricao */,
+				62ED449A1383E20E001D7202 /* InscricaoTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,19 +101,20 @@
 			isa = PBXGroup;
 			children = (
 				6293E5C61383DC1F00DC8903 /* Foundation.framework */,
+				62ED449B1383E20E001D7202 /* Cocoa.framework */,
+				62ED449D1383E20E001D7202 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6293E5C81383DC1F00DC8903 /* Inscricao */ = {
+		6293E5C81383DC1F00DC8903 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				6293E5C91383DC1F00DC8903 /* main.m */,
 				6293E5CD1383DC1F00DC8903 /* Inscricao.1 */,
 				6293E5CB1383DC1F00DC8903 /* Supporting Files */,
-				62ED44491383DF9F001D7202 /* Inscricao.h */,
-				62ED444A1383DF9F001D7202 /* Inscricao.m */,
 			);
+			name = Resources;
 			path = Inscricao;
 			sourceTree = "<group>";
 		};
@@ -89,6 +124,50 @@
 				6293E5CC1383DC1F00DC8903 /* Inscricao-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62ED449D1383E20E001D7202 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62ED449E1383E20E001D7202 /* AppKit.framework */,
+				62ED449F1383E20E001D7202 /* CoreData.framework */,
+				62ED44A01383E20E001D7202 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		62ED44A11383E20E001D7202 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				62ED44A81383E20E001D7202 /* InscricaoTest.h */,
+				62ED44AA1383E20E001D7202 /* InscricaoTest.m */,
+				62ED44A21383E20E001D7202 /* Supporting Files */,
+			);
+			name = Test;
+			path = InscricaoTest;
+			sourceTree = "<group>";
+		};
+		62ED44A21383E20E001D7202 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				62ED44A31383E20E001D7202 /* InscricaoTest-Info.plist */,
+				62ED44A41383E20E001D7202 /* InfoPlist.strings */,
+				62ED44A71383E20E001D7202 /* InscricaoTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		62ED44C61383E3E3001D7202 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62ED44491383DF9F001D7202 /* Inscricao.h */,
+				62ED444A1383DF9F001D7202 /* Inscricao.m */,
+				62ED44C81383ED59001D7202 /* SalaCheiaException.h */,
+				62ED44C91383ED59001D7202 /* SalaCheiaException.m */,
+				62ED44CC1383EFB2001D7202 /* AlunoDuplicadoException.h */,
+				62ED44CD1383EFB2001D7202 /* AlunoDuplicadoException.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -111,6 +190,24 @@
 			productReference = 6293E5C21383DC1F00DC8903 /* Inscricao */;
 			productType = "com.apple.product-type.tool";
 		};
+		62ED44991383E20E001D7202 /* InscricaoTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62ED44AC1383E20E001D7202 /* Build configuration list for PBXNativeTarget "InscricaoTest" */;
+			buildPhases = (
+				62ED44951383E20E001D7202 /* Sources */,
+				62ED44961383E20E001D7202 /* Frameworks */,
+				62ED44971383E20E001D7202 /* Resources */,
+				62ED44981383E20E001D7202 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = InscricaoTest;
+			productName = InscricaoTest;
+			productReference = 62ED449A1383E20E001D7202 /* InscricaoTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,9 +226,38 @@
 			projectRoot = "";
 			targets = (
 				6293E5C11383DC1F00DC8903 /* Inscricao */,
+				62ED44991383E20E001D7202 /* InscricaoTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62ED44971383E20E001D7202 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62ED44A61383E20E001D7202 /* InfoPlist.strings in Resources */,
+				62ED44A91383E20E001D7202 /* InscricaoTest.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62ED44981383E20E001D7202 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6293E5BE1383DC1F00DC8903 /* Sources */ = {
@@ -140,10 +266,34 @@
 			files = (
 				6293E5CA1383DC1F00DC8903 /* main.m in Sources */,
 				62ED444B1383DF9F001D7202 /* Inscricao.m in Sources */,
+				62ED44CA1383ED59001D7202 /* SalaCheiaException.m in Sources */,
+				62ED44CE1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		62ED44951383E20E001D7202 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62ED44C71383E6FE001D7202 /* Inscricao.m in Sources */,
+				62ED44AB1383E20E001D7202 /* InscricaoTest.m in Sources */,
+				62ED44CB1383ED59001D7202 /* SalaCheiaException.m in Sources */,
+				62ED44CF1383EFB2001D7202 /* AlunoDuplicadoException.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62ED44A41383E20E001D7202 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62ED44A51383E20E001D7202 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6293E5CE1383DC1F00DC8903 /* Debug */ = {
@@ -204,6 +354,46 @@
 			};
 			name = Release;
 		};
+		62ED44AD1383E20E001D7202 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InscricaoTest/InscricaoTest-Prefix.pch";
+				INFOPLIST_FILE = "InscricaoTest/InscricaoTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		62ED44AE1383E20E001D7202 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "InscricaoTest/InscricaoTest-Prefix.pch";
+				INFOPLIST_FILE = "InscricaoTest/InscricaoTest-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -224,6 +414,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		62ED44AC1383E20E001D7202 /* Build configuration list for PBXNativeTarget "InscricaoTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62ED44AD1383E20E001D7202 /* Debug */,
+				62ED44AE1383E20E001D7202 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

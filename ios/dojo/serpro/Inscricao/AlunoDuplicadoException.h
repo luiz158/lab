@@ -1,5 +1,5 @@
 //
-//  Inscricao.h
+//  AlunoDuplicadoException.h
 //  Inscricao
 //
 //  Created by Cleverson Sacramento on 18/05/11.
@@ -9,12 +9,11 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Inscricao : NSObject {
-    
-        NSMutableArray *inscritos;
+@interface AlunoDuplicadoException : NSException {
+
+    NSString *aluno;
 }
 
--(void)cadastrar:(NSString *) aluno;
-
+- (id) initWithAluno:(NSString *) aluno;
 
 @end

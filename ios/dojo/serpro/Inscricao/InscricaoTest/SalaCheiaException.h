@@ -1,5 +1,5 @@
 //
-//  Inscricao.h
+//  SalaCheiaException.h
 //  Inscricao
 //
 //  Created by Cleverson Sacramento on 18/05/11.
@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 
-@interface Inscricao : NSObject {
-    
-        NSMutableArray *inscritos;
+@interface SalaCheiaException : NSException {
+
+    int lotacao;
+
 }
 
--(void)cadastrar:(NSString *) aluno;
-
+- (id) initWithLotacao:(int) lotacao;
 
 @end
