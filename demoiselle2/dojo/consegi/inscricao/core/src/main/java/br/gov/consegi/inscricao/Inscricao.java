@@ -11,6 +11,10 @@ import org.slf4j.Logger;
 import br.gov.frameworkdemoiselle.stereotype.BusinessController;
 import br.gov.frameworkdemoiselle.util.ResourceBundle;
 
+/**
+ * @author 43189334587
+ *
+ */
 @ApplicationScoped
 @BusinessController
 public class Inscricao {
