@@ -1,6 +1,6 @@
-<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.2.1"
+<pretty-config xmlns="http://ocpsoft.com/prettyfaces/3.3.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.2.1 http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.2.1.xsd">
+	xsi:schemaLocation="http://ocpsoft.com/prettyfaces/3.3.0 http://ocpsoft.com/xml/ns/prettyfaces/ocpsoft-pretty-faces-3.3.0.xsd">
 
 	<rewrite match="^/(.*)/$" substitute="/$1" redirect="301" />
 
@@ -14,8 +14,13 @@
 		<view-id value="/bookmark_list.jsf" />
 	</url-mapping>
 
+	<url-mapping id="bookmark-new">
+		<pattern value="/bookmark/new" />
+		<view-id value="/bookmark_edit.jsf" />
+	</url-mapping>
+	
 	<url-mapping id="bookmark-edit">
-		<pattern value="/bookmark/edit" />
+		<pattern value="/bookmark/#{id}" />
 		<view-id value="/bookmark_edit.jsf" />
 	</url-mapping>
 </pretty-config>

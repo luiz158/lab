@@ -6,7 +6,7 @@
 		<h:form>
 			<p:toolbar>
 				<p:toolbarGroup align="left">
-					<p:commandButton title="#{messages['button.new']}" image="ui-icon-document" action="#{bookmarkListMB.getNextView}"
+					<p:commandButton title="#{messages['button.new']}" image="ui-icon-document" action="pretty:bookmark-new"
 						actionListener="#{bookmarkListMB.clear}" ajax="false" />
 
 					<p:commandButton title="#{messages['button.delete']}" image="ui-icon-trash" onclick="confirmation.show()"
