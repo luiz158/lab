@@ -28,6 +28,35 @@
 			<version>6.0</version>
 			<scope>provided</scope>
 		</dependency>
+<!-- 		<dependency> -->
+<!-- 			<groupId>br.gov.frameworkdemoiselle</groupId> -->
+<!-- 			<artifactId>demoiselle-core</artifactId> -->
+<!-- 			<version>2.1.1</version> -->
+<!-- 			<scope>compile</scope> -->
+<!-- 			<exclusions> -->
+<!-- 				<exclusion> -->
+<!-- 					<artifactId>cdi-api</artifactId> -->
+<!-- 					<groupId>javax.enterprise</groupId> -->
+<!-- 				</exclusion> -->
+				<!-- <exclusion> -->
+				<!-- <artifactId>slf4j-api</artifactId> -->
+				<!-- <groupId>org.slf4j</groupId> -->
+				<!-- </exclusion> -->
+<!-- 				<exclusion> -->
+<!-- 					<artifactId>validation-api</artifactId> -->
+<!-- 					<groupId>javax.validation</groupId> -->
+<!-- 				</exclusion> -->
+<!-- 				<exclusion> -->
+<!-- 					<artifactId>commons-configuration</artifactId> -->
+<!-- 					<groupId>commons-configuration</groupId> -->
+<!-- 				</exclusion> -->
+<!-- 			</exclusions> -->
+<!-- 		</dependency> -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.5.10</version>
+		</dependency>
 	</dependencies>
 
 	<repositories>
@@ -36,5 +65,10 @@
 			<name>Repository hosting the jee6 artifacts</name>
 			<url>http://download.java.net/maven/2</url>
 		</repository>
+<!-- 		<repository> -->
+<!-- 			<id>demoiselle.sourceforge.net</id> -->
+<!-- 			<name>Demoiselle Maven Repository</name> -->
+<!-- 			<url>http://demoiselle.sourceforge.net/repository/release</url> -->
+<!-- 		</repository> -->
 	</repositories>
 </project>
