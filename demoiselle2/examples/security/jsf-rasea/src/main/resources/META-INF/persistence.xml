@@ -4,8 +4,8 @@
 
 	<!--
 	-->
-	<persistence-unit name="bookmark-ds" transaction-type="JTA">
-		<jta-data-source>java:/DefaultDS</jta-data-source>
+	<persistence-unit name="bookmark-ds" transaction-type="RESOURCE_LOCAL">
+		<non-jta-data-source>java:/DefaultDS</non-jta-data-source>
 		
 		<class>examples.domain.Bookmark</class>
 
