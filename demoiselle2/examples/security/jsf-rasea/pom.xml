@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://maven.apache.org/POM/4.0.0"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
@@ -26,14 +27,16 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
-		    <groupId>br.gov.frameworkdemoiselle</groupId>
-		    <artifactId>demoiselle-jta</artifactId>
-		    <scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>org.primefaces</groupId>
 			<artifactId>primefaces</artifactId>
 			<scope>compile</scope>
+		</dependency>
+
+		<!-- Agente Rasea para o Demoiselle 2 -->
+		<dependency>
+			<groupId>org.rasea</groupId>
+			<artifactId>rasea-agent-demoiselle</artifactId>
+			<version>0.1.0.Final</version>
 		</dependency>
 	</dependencies>
 
@@ -42,6 +45,12 @@
 			<id>demoiselle.sourceforge.net-release</id>
 			<url>http://demoiselle.sourceforge.net/repository/release</url>
 		</repository>
+
+		<!-- Repositório de artefatos Maven do Rasea -->
+		<repository>
+			<id>repo.rasea.org</id>
+			<name>Rasea Maven Repository</name>
+			<url>http://repo.rasea.org/maven2/</url>
+		</repository>
 	</repositories>
-	
 </project>

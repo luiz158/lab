@@ -1,0 +1,20 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	template="/template/main.xhtml">
+
+	<ui:define name="body">
+		<h:form>
+			<h:panelGrid columns="2">
+				<h:outputLabel for="username" value="login" />
+				<h:inputText id="username" value="#{credential.username}" />
+
+				<h:outputLabel for="password" value="senha" />
+				<h:inputSecret id="password" value="#{credential.password}" />
+
+				<h:commandButton value="Logar" action="#{securityContext.login}" />
+			</h:panelGrid>
+		</h:form>
+	</ui:define>
+
+</ui:composition>
