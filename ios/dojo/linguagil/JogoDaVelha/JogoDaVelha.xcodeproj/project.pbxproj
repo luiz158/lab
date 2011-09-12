@@ -99,11 +99,59 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		123D0E8F141EAEEF00B9565C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A942141E460700FD99F3 /* Partida.h */,
+				12D4A943141E460700FD99F3 /* Partida.m */,
+				12D4A970141E5C6F00FD99F3 /* Jogador.h */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		123D0E90141EAF1200B9565C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A91D141E45A800FD99F3 /* JogoDaVelhaViewController.h */,
+				12D4A91E141E45A800FD99F3 /* JogoDaVelhaViewController.m */,
+				12D4A920141E45A800FD99F3 /* JogoDaVelhaViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		123D0E91141EAF2D00B9565C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A989141E96BC00FD99F3 /* Casa11View.h */,
+				12D4A98A141E96BC00FD99F3 /* Casa11View.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		123D0E92141EAF4E00B9565C /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */,
+				12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */,
+				12D4A91A141E45A800FD99F3 /* MainWindow.xib */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		123D0E93141EAF7600B9565C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A936141E45A800FD99F3 /* PartidaTests.h */,
+				12D4A938141E45A800FD99F3 /* PartidaTests.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		12D4A8F9141E45A700FD99F3 = {
 			isa = PBXGroup;
 			children = (
 				12D4A986141E945900FD99F3 /* UI */,
-				12D4A90E141E45A700FD99F3 /* Classes */,
+				12D4A90E141E45A700FD99F3 /* Core */,
 				12D4A930141E45A800FD99F3 /* Tests */,
 				12D4A907141E45A700FD99F3 /* Frameworks */,
 				12D4A905141E45A700FD99F3 /* Products */,
@@ -130,16 +178,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		12D4A90E141E45A700FD99F3 /* Classes */ = {
+		12D4A90E141E45A700FD99F3 /* Core */ = {
 			isa = PBXGroup;
 			children = (
 				12D4A90F141E45A800FD99F3 /* Supporting Files */,
 				12D4A985141E8E5100FD99F3 /* Exceptions */,
-				12D4A942141E460700FD99F3 /* Partida.h */,
-				12D4A943141E460700FD99F3 /* Partida.m */,
-				12D4A970141E5C6F00FD99F3 /* Jogador.h */,
+				123D0E8F141EAEEF00B9565C /* Classes */,
 			);
-			name = Classes;
+			name = Core;
 			path = JogoDaVelha;
 			sourceTree = "<group>";
 		};
@@ -157,8 +203,7 @@
 		12D4A930141E45A800FD99F3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				12D4A936141E45A800FD99F3 /* PartidaTests.h */,
-				12D4A938141E45A800FD99F3 /* PartidaTests.m */,
+				123D0E93141EAF7600B9565C /* Classes */,
 				12D4A931141E45A800FD99F3 /* Supporting Files */,
 			);
 			name = Tests;
@@ -190,14 +235,9 @@
 		12D4A986141E945900FD99F3 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */,
-				12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */,
-				12D4A91A141E45A800FD99F3 /* MainWindow.xib */,
-				12D4A91D141E45A800FD99F3 /* JogoDaVelhaViewController.h */,
-				12D4A91E141E45A800FD99F3 /* JogoDaVelhaViewController.m */,
-				12D4A920141E45A800FD99F3 /* JogoDaVelhaViewController.xib */,
-				12D4A989141E96BC00FD99F3 /* Casa11View.h */,
-				12D4A98A141E96BC00FD99F3 /* Casa11View.m */,
+				123D0E92141EAF4E00B9565C /* Delegate */,
+				123D0E90141EAF1200B9565C /* Controllers */,
+				123D0E91141EAF2D00B9565C /* Views */,
 			);
 			name = UI;
 			path = JogoDaVelha;
