@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		12D4A909141E45A700FD99F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A908141E45A700FD99F3 /* UIKit.framework */; };
+		12D4A90B141E45A700FD99F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90A141E45A700FD99F3 /* Foundation.framework */; };
+		12D4A90D141E45A700FD99F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */; };
+		12D4A913141E45A800FD99F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A911141E45A800FD99F3 /* InfoPlist.strings */; };
+		12D4A915141E45A800FD99F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A914141E45A800FD99F3 /* main.m */; };
+		12D4A919141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */; };
+		12D4A91C141E45A800FD99F3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A91A141E45A800FD99F3 /* MainWindow.xib */; };
+		12D4A91F141E45A800FD99F3 /* JogoDaVelhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A91E141E45A800FD99F3 /* JogoDaVelhaViewController.m */; };
+		12D4A922141E45A800FD99F3 /* JogoDaVelhaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A920141E45A800FD99F3 /* JogoDaVelhaViewController.xib */; };
+		12D4A92A141E45A800FD99F3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A929141E45A800FD99F3 /* SenTestingKit.framework */; };
+		12D4A92B141E45A800FD99F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A908141E45A700FD99F3 /* UIKit.framework */; };
+		12D4A92C141E45A800FD99F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90A141E45A700FD99F3 /* Foundation.framework */; };
+		12D4A92D141E45A800FD99F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */; };
+		12D4A935141E45A800FD99F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A933141E45A800FD99F3 /* InfoPlist.strings */; };
+		12D4A937141E45A800FD99F3 /* PartidaTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A936141E45A800FD99F3 /* PartidaTests.h */; };
+		12D4A939141E45A800FD99F3 /* PartidaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A938141E45A800FD99F3 /* PartidaTests.m */; };
+		12D4A944141E460700FD99F3 /* Partida.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A943141E460700FD99F3 /* Partida.m */; };
+		12D4A97A141E683C00FD99F3 /* CasaJaMarcadaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A979141E683C00FD99F3 /* CasaJaMarcadaException.m */; };
+		12D4A981141E6BFA00FD99F3 /* CasaInexistenteException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A980141E6BFA00FD99F3 /* CasaInexistenteException.m */; };
+		12D4A984141E8E2600FD99F3 /* JogoEncerradoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A983141E8E2600FD99F3 /* JogoEncerradoException.m */; };
+		12D4A98B141E96BC00FD99F3 /* Casa11View.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A98A141E96BC00FD99F3 /* Casa11View.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		12D4A972141E5D7800FD99F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 12D4A8FB141E45A700FD99F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 12D4A903141E45A700FD99F3;
+			remoteInfo = JogoDaVelha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D4A904141E45A700FD99F3 /* JogoDaVelha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaVelha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D4A908141E45A700FD99F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		12D4A90A141E45A700FD99F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		12D4A910141E45A800FD99F3 /* JogoDaVelha-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JogoDaVelha-Info.plist"; sourceTree = "<group>"; };
+		12D4A912141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D4A914141E45A800FD99F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		12D4A916141E45A800FD99F3 /* JogoDaVelha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JogoDaVelha-Prefix.pch"; sourceTree = "<group>"; };
+		12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogoDaVelhaAppDelegate.h; sourceTree = "<group>"; };
+		12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JogoDaVelhaAppDelegate.m; sourceTree = "<group>"; };
+		12D4A91B141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		12D4A91D141E45A800FD99F3 /* JogoDaVelhaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogoDaVelhaViewController.h; sourceTree = "<group>"; };
+		12D4A91E141E45A800FD99F3 /* JogoDaVelhaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JogoDaVelhaViewController.m; sourceTree = "<group>"; };
+		12D4A921141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JogoDaVelhaViewController.xib; sourceTree = "<group>"; };
+		12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JogoDaVelhaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D4A929141E45A800FD99F3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		12D4A932141E45A800FD99F3 /* JogoDaVelhaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JogoDaVelhaTests-Info.plist"; sourceTree = "<group>"; };
+		12D4A934141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		12D4A936141E45A800FD99F3 /* PartidaTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PartidaTests.h; sourceTree = "<group>"; };
+		12D4A938141E45A800FD99F3 /* PartidaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PartidaTests.m; sourceTree = "<group>"; };
+		12D4A942141E460700FD99F3 /* Partida.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Partida.h; sourceTree = "<group>"; };
+		12D4A943141E460700FD99F3 /* Partida.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Partida.m; sourceTree = "<group>"; };
+		12D4A970141E5C6F00FD99F3 /* Jogador.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jogador.h; sourceTree = "<group>"; };
+		12D4A978141E683C00FD99F3 /* CasaJaMarcadaException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasaJaMarcadaException.h; sourceTree = "<group>"; };
+		12D4A979141E683C00FD99F3 /* CasaJaMarcadaException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasaJaMarcadaException.m; sourceTree = "<group>"; };
+		12D4A97F141E6BFA00FD99F3 /* CasaInexistenteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CasaInexistenteException.h; sourceTree = "<group>"; };
+		12D4A980141E6BFA00FD99F3 /* CasaInexistenteException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CasaInexistenteException.m; sourceTree = "<group>"; };
+		12D4A982141E8E2600FD99F3 /* JogoEncerradoException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JogoEncerradoException.h; sourceTree = "<group>"; };
+		12D4A983141E8E2600FD99F3 /* JogoEncerradoException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JogoEncerradoException.m; sourceTree = "<group>"; };
+		12D4A989141E96BC00FD99F3 /* Casa11View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa11View.h; sourceTree = "<group>"; };
+		12D4A98A141E96BC00FD99F3 /* Casa11View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa11View.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12D4A901141E45A700FD99F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A909141E45A700FD99F3 /* UIKit.framework in Frameworks */,
+				12D4A90B141E45A700FD99F3 /* Foundation.framework in Frameworks */,
+				12D4A90D141E45A700FD99F3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D4A924141E45A800FD99F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A92A141E45A800FD99F3 /* SenTestingKit.framework in Frameworks */,
+				12D4A92B141E45A800FD99F3 /* UIKit.framework in Frameworks */,
+				12D4A92C141E45A800FD99F3 /* Foundation.framework in Frameworks */,
+				12D4A92D141E45A800FD99F3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12D4A8F9141E45A700FD99F3 = {
+			isa = PBXGroup;
+			children = (
+				12D4A986141E945900FD99F3 /* UI */,
+				12D4A90E141E45A700FD99F3 /* Classes */,
+				12D4A930141E45A800FD99F3 /* Tests */,
+				12D4A907141E45A700FD99F3 /* Frameworks */,
+				12D4A905141E45A700FD99F3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		12D4A905141E45A700FD99F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A904141E45A700FD99F3 /* JogoDaVelha.app */,
+				12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		12D4A907141E45A700FD99F3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A908141E45A700FD99F3 /* UIKit.framework */,
+				12D4A90A141E45A700FD99F3 /* Foundation.framework */,
+				12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */,
+				12D4A929141E45A800FD99F3 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		12D4A90E141E45A700FD99F3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A90F141E45A800FD99F3 /* Supporting Files */,
+				12D4A985141E8E5100FD99F3 /* Exceptions */,
+				12D4A942141E460700FD99F3 /* Partida.h */,
+				12D4A943141E460700FD99F3 /* Partida.m */,
+				12D4A970141E5C6F00FD99F3 /* Jogador.h */,
+			);
+			name = Classes;
+			path = JogoDaVelha;
+			sourceTree = "<group>";
+		};
+		12D4A90F141E45A800FD99F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A910141E45A800FD99F3 /* JogoDaVelha-Info.plist */,
+				12D4A911141E45A800FD99F3 /* InfoPlist.strings */,
+				12D4A914141E45A800FD99F3 /* main.m */,
+				12D4A916141E45A800FD99F3 /* JogoDaVelha-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D4A930141E45A800FD99F3 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A936141E45A800FD99F3 /* PartidaTests.h */,
+				12D4A938141E45A800FD99F3 /* PartidaTests.m */,
+				12D4A931141E45A800FD99F3 /* Supporting Files */,
+			);
+			name = Tests;
+			path = JogoDaVelhaTests;
+			sourceTree = "<group>";
+		};
+		12D4A931141E45A800FD99F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A932141E45A800FD99F3 /* JogoDaVelhaTests-Info.plist */,
+				12D4A933141E45A800FD99F3 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		12D4A985141E8E5100FD99F3 /* Exceptions */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A978141E683C00FD99F3 /* CasaJaMarcadaException.h */,
+				12D4A979141E683C00FD99F3 /* CasaJaMarcadaException.m */,
+				12D4A97F141E6BFA00FD99F3 /* CasaInexistenteException.h */,
+				12D4A980141E6BFA00FD99F3 /* CasaInexistenteException.m */,
+				12D4A982141E8E2600FD99F3 /* JogoEncerradoException.h */,
+				12D4A983141E8E2600FD99F3 /* JogoEncerradoException.m */,
+			);
+			name = Exceptions;
+			sourceTree = "<group>";
+		};
+		12D4A986141E945900FD99F3 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */,
+				12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */,
+				12D4A91A141E45A800FD99F3 /* MainWindow.xib */,
+				12D4A91D141E45A800FD99F3 /* JogoDaVelhaViewController.h */,
+				12D4A91E141E45A800FD99F3 /* JogoDaVelhaViewController.m */,
+				12D4A920141E45A800FD99F3 /* JogoDaVelhaViewController.xib */,
+				12D4A989141E96BC00FD99F3 /* Casa11View.h */,
+				12D4A98A141E96BC00FD99F3 /* Casa11View.m */,
+			);
+			name = UI;
+			path = JogoDaVelha;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		12D4A903141E45A700FD99F3 /* JogoDaVelha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D4A93C141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelha" */;
+			buildPhases = (
+				12D4A900141E45A700FD99F3 /* Sources */,
+				12D4A901141E45A700FD99F3 /* Frameworks */,
+				12D4A902141E45A700FD99F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JogoDaVelha;
+			productName = JogoDaVelha;
+			productReference = 12D4A904141E45A700FD99F3 /* JogoDaVelha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		12D4A927141E45A800FD99F3 /* JogoDaVelhaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelhaTests" */;
+			buildPhases = (
+				12D4A923141E45A800FD99F3 /* Sources */,
+				12D4A924141E45A800FD99F3 /* Frameworks */,
+				12D4A925141E45A800FD99F3 /* Resources */,
+				12D4A926141E45A800FD99F3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				12D4A973141E5D7800FD99F3 /* PBXTargetDependency */,
+			);
+			name = JogoDaVelhaTests;
+			productName = JogoDaVelhaTests;
+			productReference = 12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		12D4A8FB141E45A700FD99F3 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 12D4A8FE141E45A700FD99F3 /* Build configuration list for PBXProject "JogoDaVelha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 12D4A8F9141E45A700FD99F3;
+			productRefGroup = 12D4A905141E45A700FD99F3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				12D4A903141E45A700FD99F3 /* JogoDaVelha */,
+				12D4A927141E45A800FD99F3 /* JogoDaVelhaTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		12D4A902141E45A700FD99F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A913141E45A800FD99F3 /* InfoPlist.strings in Resources */,
+				12D4A91C141E45A800FD99F3 /* MainWindow.xib in Resources */,
+				12D4A922141E45A800FD99F3 /* JogoDaVelhaViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D4A925141E45A800FD99F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A935141E45A800FD99F3 /* InfoPlist.strings in Resources */,
+				12D4A937141E45A800FD99F3 /* PartidaTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12D4A926141E45A800FD99F3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		12D4A900141E45A700FD99F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A915141E45A800FD99F3 /* main.m in Sources */,
+				12D4A919141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m in Sources */,
+				12D4A91F141E45A800FD99F3 /* JogoDaVelhaViewController.m in Sources */,
+				12D4A944141E460700FD99F3 /* Partida.m in Sources */,
+				12D4A97A141E683C00FD99F3 /* CasaJaMarcadaException.m in Sources */,
+				12D4A981141E6BFA00FD99F3 /* CasaInexistenteException.m in Sources */,
+				12D4A984141E8E2600FD99F3 /* JogoEncerradoException.m in Sources */,
+				12D4A98B141E96BC00FD99F3 /* Casa11View.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		12D4A923141E45A800FD99F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12D4A939141E45A800FD99F3 /* PartidaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		12D4A973141E5D7800FD99F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 12D4A903141E45A700FD99F3 /* JogoDaVelha */;
+			targetProxy = 12D4A972141E5D7800FD99F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		12D4A911141E45A800FD99F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D4A912141E45A800FD99F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		12D4A91A141E45A800FD99F3 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D4A91B141E45A800FD99F3 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		12D4A920141E45A800FD99F3 /* JogoDaVelhaViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D4A921141E45A800FD99F3 /* en */,
+			);
+			name = JogoDaVelhaViewController.xib;
+			sourceTree = "<group>";
+		};
+		12D4A933141E45A800FD99F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				12D4A934141E45A800FD99F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		12D4A93A141E45A800FD99F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		12D4A93B141E45A800FD99F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		12D4A93D141E45A800FD99F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogoDaVelha/JogoDaVelha-Prefix.pch";
+				INFOPLIST_FILE = "JogoDaVelha/JogoDaVelha-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		12D4A93E141E45A800FD99F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogoDaVelha/JogoDaVelha-Prefix.pch";
+				INFOPLIST_FILE = "JogoDaVelha/JogoDaVelha-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		12D4A940141E45A800FD99F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JogoDaVelha.app/JogoDaVelha";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogoDaVelha/JogoDaVelha-Prefix.pch";
+				INFOPLIST_FILE = "JogoDaVelhaTests/JogoDaVelhaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		12D4A941141E45A800FD99F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/JogoDaVelha.app/JogoDaVelha";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JogoDaVelha/JogoDaVelha-Prefix.pch";
+				INFOPLIST_FILE = "JogoDaVelhaTests/JogoDaVelhaTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		12D4A8FE141E45A700FD99F3 /* Build configuration list for PBXProject "JogoDaVelha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D4A93A141E45A800FD99F3 /* Debug */,
+				12D4A93B141E45A800FD99F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D4A93C141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D4A93D141E45A800FD99F3 /* Debug */,
+				12D4A93E141E45A800FD99F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelhaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				12D4A940141E45A800FD99F3 /* Debug */,
+				12D4A941141E45A800FD99F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 12D4A8FB141E45A700FD99F3 /* Project object */;
+}
