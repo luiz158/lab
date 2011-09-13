@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[Casa11View touchesBegan:withEvent:]:Casa11View.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self superview]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[TabuleiroView proximoJogador]:TabuleiroView.m">
       </ContextState>
       <ContextState
