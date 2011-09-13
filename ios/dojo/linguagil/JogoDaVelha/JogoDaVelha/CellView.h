@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Casa11View : UIImageView
+@interface CellView : UIImageView
+
+- (int)linha;
+
+- (int)coluna;
 
 @end
