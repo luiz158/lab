@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Casa13View : UIView
+@interface Casa13View : UIImageView
 
 @end

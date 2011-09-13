@@ -16,8 +16,7 @@
     TabuleiroView *view = (TabuleiroView *)[self superview];
 
     if([view jogadaPermitidaNaLinha:2 eColuna:2]){
-        NSString *image = [view proximaMarcacao];
-        self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:image]];
+        self.image = [UIImage imageNamed:[view proximaMarcacao]];
         
         [view marcarLinha:2 eColuna:2];
     }

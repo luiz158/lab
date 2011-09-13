@@ -23,11 +23,6 @@
     return self;
 }
 
--(void)didAddSubview:(UIView *)subview
-{
-    _label.text = [_partida proximoJogador] ? @"Jogador 1" : @"Jogador 2";    
-}
-
 -(void)marcarLinha:(int)linha eColuna:(int)coluna
 {
     [_partida marcarLinha:linha eColuna:coluna];

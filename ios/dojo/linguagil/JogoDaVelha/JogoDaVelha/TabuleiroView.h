@@ -10,7 +10,7 @@
 #import "Partida.h"
 #import "Jogador.h"
 
-@interface TabuleiroView : UIView
+@interface TabuleiroView : UIImageView
 {
     IBOutlet UILabel *_label;
     
