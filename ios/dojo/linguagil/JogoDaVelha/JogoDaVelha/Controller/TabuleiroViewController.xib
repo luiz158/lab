@@ -45,7 +45,7 @@
 					<object class="IBUIImageView" id="737857828">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">274</int>
-						<string key="NSFrame">{{5, 71}, {329, 311}}</string>
+						<string key="NSFrame">{{6, 52}, {329, 311}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="125400136"/>
@@ -60,7 +60,7 @@
 					<object class="IBUIImageView" id="125400136">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{10, 77}, {100, 100}}</string>
+						<string key="NSFrame">{{11, 58}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="881505992"/>
@@ -70,7 +70,7 @@
 					<object class="IBUIImageView" id="881505992">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{110, 77}, {100, 100}}</string>
+						<string key="NSFrame">{{111, 58}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="612425399"/>
@@ -80,7 +80,7 @@
 					<object class="IBUIImageView" id="612425399">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{210, 77}, {100, 100}}</string>
+						<string key="NSFrame">{{211, 58}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="851451213"/>
@@ -90,7 +90,7 @@
 					<object class="IBUIImageView" id="851451213">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{10, 177}, {100, 100}}</string>
+						<string key="NSFrame">{{11, 158}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="62456713"/>
@@ -100,7 +100,7 @@
 					<object class="IBUIImageView" id="62456713">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{110, 177}, {100, 100}}</string>
+						<string key="NSFrame">{{111, 158}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="226584113"/>
@@ -110,7 +110,7 @@
 					<object class="IBUIImageView" id="226584113">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{210, 177}, {100, 100}}</string>
+						<string key="NSFrame">{{211, 158}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="407311792"/>
@@ -120,7 +120,7 @@
 					<object class="IBUIImageView" id="407311792">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{10, 277}, {100, 100}}</string>
+						<string key="NSFrame">{{11, 258}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="175909263"/>
@@ -130,7 +130,7 @@
 					<object class="IBUIImageView" id="175909263">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{110, 277}, {100, 100}}</string>
+						<string key="NSFrame">{{111, 258}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="291700296"/>
@@ -140,7 +140,7 @@
 					<object class="IBUIImageView" id="291700296">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{210, 277}, {100, 100}}</string>
+						<string key="NSFrame">{{211, 258}, {100, 100}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView"/>

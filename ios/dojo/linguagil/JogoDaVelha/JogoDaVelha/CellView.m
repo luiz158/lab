@@ -20,7 +20,7 @@
     int linha;
     
     float center = self.frame.origin.y + self.frame.size.height / 2;
-    float section = self.window.frame.size.height / 3;
+    float section = self.superview.frame.size.height / 3;
     
     for(int i = 1; i <= 3; i ++){
         if(center > section * (i-1) && center < section * (i)){

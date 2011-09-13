@@ -16,9 +16,34 @@
     return [_partida proximoJogador] == Jogador1 ? @"x.png" : @"o.png";
 }
 
+- (NSString *)proximoJogador
+{
+    return [_partida proximoJogador] == Jogador1 ? @"Jogador 1" : @"Jogador 2";;
+}
+
 - (void)atualizaProximoJogador
 {
-    self.title = [_partida proximoJogador] == Jogador1 ? @"Jogador 1" : @"Jogador 2";
+    self.title = [self proximoJogador];
+}
+
+- (NSString *)vencedor
+{
+    NSString * resultado;
+    
+    switch ([_partida vencedorDaPartida]) {
+        case Jogador1:
+            resultado = @"O jogador 1 ganhou";
+            break;
+
+        case Jogador2:
+            resultado = @"O jogador 2 brocou o jogador 1";
+            break;
+
+        default:
+            resultado = @"Deu empate :P";
+    }
+    
+    return resultado;
 }
 
 - (void)marcar: (NSNotification *)notification
@@ -35,12 +60,12 @@
         
         [_partida marcarLinha:linha eColuna:coluna];
         cellView.image = [UIImage imageNamed: imageName];
-
+        
         [self atualizaProximoJogador];
     }
     
     if([_partida vencedorDaPartida] != JogoEmAndamento){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Vencedor" message:@"???" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cabô" message:[self vencedor] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
         [alert show];
     }
 }
