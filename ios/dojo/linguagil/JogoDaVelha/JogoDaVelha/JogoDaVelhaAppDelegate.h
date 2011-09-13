@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@class JogoDaVelhaViewController;
-
 @interface JogoDaVelhaAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
