@@ -17,221 +17,221 @@
 {
     [super setUp];
     
-    partida = [[Partida alloc] init];
+    _partida = [[Partida alloc] init];
 }
 
 - (void)tearDown
 {
-    NSLog(@"%@", partida);
-    [partida release];
+    NSLog(@"%@", _partida);
+    [_partida release];
     
     [super tearDown];
 }
 
 - (void)testVerificarSeTabuleiroIniciaVazio
 {
-    STAssertEquals(Ninguem, [partida donoDaLinha:1 eColuna:1], nil);
-    STAssertEquals(Ninguem, [partida donoDaLinha:1 eColuna:2], nil);    
-    STAssertEquals(Ninguem, [partida donoDaLinha:1 eColuna:3], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:1 eColuna:1], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:1 eColuna:2], nil);    
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:1 eColuna:3], nil);
     
-    STAssertEquals(Ninguem, [partida donoDaLinha:2 eColuna:1], nil);
-    STAssertEquals(Ninguem, [partida donoDaLinha:2 eColuna:2], nil);    
-    STAssertEquals(Ninguem, [partida donoDaLinha:2 eColuna:3], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:2 eColuna:1], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:2 eColuna:2], nil);    
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:2 eColuna:3], nil);
     
-    STAssertEquals(Ninguem, [partida donoDaLinha:3 eColuna:1], nil);
-    STAssertEquals(Ninguem, [partida donoDaLinha:3 eColuna:2], nil);    
-    STAssertEquals(Ninguem, [partida donoDaLinha:3 eColuna:3], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:3 eColuna:1], nil);
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:3 eColuna:2], nil);    
+    STAssertEquals(Ninguem, [_partida jogadorDaLinha:3 eColuna:3], nil);
 }
 
 - (void)testFalharAoMarcarCasaInexistente
 {
     @try {
-        [partida marcarLinha:-1 eColuna:1];
+        [_partida marcarLinha:-1 eColuna:1];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
     
     @try {
-        [partida marcarLinha:0 eColuna:1];
+        [_partida marcarLinha:0 eColuna:1];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
     
     @try {
-        [partida marcarLinha:4 eColuna:1];
+        [_partida marcarLinha:4 eColuna:1];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
     
     @try {
-        [partida marcarLinha:1 eColuna:-1];
+        [_partida marcarLinha:1 eColuna:-1];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
     
     @try {
-        [partida marcarLinha:1 eColuna:0];
+        [_partida marcarLinha:1 eColuna:0];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
     
     @try {
-        [partida marcarLinha:1 eColuna:4];
+        [_partida marcarLinha:1 eColuna:4];
         STFail(@"Marcou uma casa inexistente!");
     }
     @catch (CasaInexistenteException *exception) {
-        STAssertEquals(Jogador1, [partida proximoJogador], nil);
+        STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     }
 }
 
 - (void)testMarcarCasaVaziaComSucesso
 {
-    [partida marcarLinha:2 eColuna:1];
-    STAssertEquals(Jogador1, [partida donoDaLinha:2 eColuna:1], nil);
+    [_partida marcarLinha:2 eColuna:1];
+    STAssertEquals(Jogador1, [_partida jogadorDaLinha:2 eColuna:1], nil);
     
-    [partida marcarLinha:3 eColuna:2];
-    STAssertEquals(Jogador2, [partida donoDaLinha:3 eColuna:2], nil);
+    [_partida marcarLinha:3 eColuna:2];
+    STAssertEquals(Jogador2, [_partida jogadorDaLinha:3 eColuna:2], nil);
 }
 
-- (void)testFalharAoMarcarCasaPreenchida
+- (void)testFalharAoMarcarCasaRepetida
 {
-    [partida marcarLinha:3 eColuna:3];
+    [_partida marcarLinha:3 eColuna:3];
     
     @try {
-        [partida marcarLinha:3 eColuna:3];
+        [_partida marcarLinha:3 eColuna:3];
         STFail(@"Marcou casa já marcada!");
     }
     @catch (CasaJaMarcadaException *exception) {
-        STAssertEquals(Jogador1, [partida donoDaLinha:3 eColuna:3], nil);
+        STAssertEquals(Jogador1, [_partida jogadorDaLinha:3 eColuna:3], nil);
     }
     
-    [partida marcarLinha:2 eColuna:1];
+    [_partida marcarLinha:2 eColuna:1];
     
     @try {
-        [partida marcarLinha:2 eColuna:1];
+        [_partida marcarLinha:2 eColuna:1];
         STFail(@"Marcou casa já marcada!");
     }
     @catch (CasaJaMarcadaException *exception) {
-        STAssertEquals(Jogador2, [partida donoDaLinha:2 eColuna:1], nil);
+        STAssertEquals(Jogador2, [_partida jogadorDaLinha:2 eColuna:1], nil);
     }
     
     @try {
-        [partida marcarLinha:2 eColuna:1];
+        [_partida marcarLinha:2 eColuna:1];
         STFail(@"Marcou casa já marcada!");
     }
     @catch (CasaJaMarcadaException *exception) {
-        STAssertEquals(Jogador2, [partida donoDaLinha:2 eColuna:1], nil);
+        STAssertEquals(Jogador2, [_partida jogadorDaLinha:2 eColuna:1], nil);
     }
 }
 
 - (void)testAlternanciaAutomaticaDeJogador
 {
-    STAssertEquals(Jogador1, [partida proximoJogador], nil);
+    STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     
-    [partida marcarLinha:1 eColuna:1];
-    STAssertEquals(Jogador2, [partida proximoJogador], nil);
+    [_partida marcarLinha:1 eColuna:1];
+    STAssertEquals(Jogador2, [_partida proximoJogador], nil);
     
-    [partida marcarLinha:1 eColuna:2];
-    STAssertEquals(Jogador1, [partida proximoJogador], nil);
+    [_partida marcarLinha:1 eColuna:2];
+    STAssertEquals(Jogador1, [_partida proximoJogador], nil);
     
-    STAssertEquals(Jogador1, [partida proximoJogador], nil);
+    STAssertEquals(Jogador1, [_partida proximoJogador], nil);
 }
 
-- (void)testPartidaEmandamento
+- (void)testPartidaEmAndamento
 {
-    STAssertEquals(JogoEmAndamento, [partida vencedorDaPartida], nil);
+    STAssertEquals(JogoEmAndamento, [_partida vencedorDaPartida], nil);
     
-    [partida marcarLinha:1 eColuna:2];
-    STAssertEquals(JogoEmAndamento, [partida vencedorDaPartida], nil);
+    [_partida marcarLinha:1 eColuna:2];
+    STAssertEquals(JogoEmAndamento, [_partida vencedorDaPartida], nil);
     
-    [partida marcarLinha:2 eColuna:2];
-    STAssertEquals(JogoEmAndamento, [partida vencedorDaPartida], nil);    
+    [_partida marcarLinha:2 eColuna:2];
+    STAssertEquals(JogoEmAndamento, [_partida vencedorDaPartida], nil);    
     
-    [partida marcarLinha:2 eColuna:3];
-    STAssertEquals(JogoEmAndamento, [partida vencedorDaPartida], nil);    
+    [_partida marcarLinha:2 eColuna:3];
+    STAssertEquals(JogoEmAndamento, [_partida vencedorDaPartida], nil);    
 }
 
 - (void)testJogador1Venceu
 {
-    [partida marcarLinha:1 eColuna:1];
-    [partida marcarLinha:1 eColuna:2];
+    [_partida marcarLinha:1 eColuna:1];
+    [_partida marcarLinha:1 eColuna:2];
     
-    [partida marcarLinha:2 eColuna:1];
-    [partida marcarLinha:2 eColuna:2];
+    [_partida marcarLinha:2 eColuna:1];
+    [_partida marcarLinha:2 eColuna:2];
     
-    [partida marcarLinha:3 eColuna:1];
+    [_partida marcarLinha:3 eColuna:1];
     
-    STAssertEquals(Jogador1, [partida vencedorDaPartida], nil);
+    STAssertEquals(Jogador1, [_partida vencedorDaPartida], nil);
     
-    [partida init];
+    [_partida init];
     
-    [partida marcarLinha:1 eColuna:3];
-    [partida marcarLinha:1 eColuna:2];
+    [_partida marcarLinha:1 eColuna:3];
+    [_partida marcarLinha:1 eColuna:2];
     
-    [partida marcarLinha:2 eColuna:2];
-    [partida marcarLinha:2 eColuna:3];
+    [_partida marcarLinha:2 eColuna:2];
+    [_partida marcarLinha:2 eColuna:3];
     
-    [partida marcarLinha:3 eColuna:1];
+    [_partida marcarLinha:3 eColuna:1];
     
-    STAssertEquals(Jogador1, [partida vencedorDaPartida], nil);
+    STAssertEquals(Jogador1, [_partida vencedorDaPartida], nil);
 }
 
 - (void)testJogador2Venceu
 {
-    [partida marcarLinha:1 eColuna:1];
-    [partida marcarLinha:1 eColuna:3];
+    [_partida marcarLinha:1 eColuna:1];
+    [_partida marcarLinha:1 eColuna:3];
     
-    [partida marcarLinha:2 eColuna:2];
-    [partida marcarLinha:2 eColuna:3];
+    [_partida marcarLinha:2 eColuna:2];
+    [_partida marcarLinha:2 eColuna:3];
     
-    [partida marcarLinha:3 eColuna:1];
-    [partida marcarLinha:3 eColuna:3];
+    [_partida marcarLinha:3 eColuna:1];
+    [_partida marcarLinha:3 eColuna:3];
     
-    STAssertEquals(Jogador2, [partida vencedorDaPartida], nil);
+    STAssertEquals(Jogador2, [_partida vencedorDaPartida], nil);
 }
 
 - (void)testEmpate
 {
-    [partida marcarLinha:1 eColuna:1];
-    [partida marcarLinha:2 eColuna:2];
+    [_partida marcarLinha:1 eColuna:1];
+    [_partida marcarLinha:2 eColuna:2];
 
-    [partida marcarLinha:1 eColuna:2];
-    [partida marcarLinha:1 eColuna:3];
+    [_partida marcarLinha:1 eColuna:2];
+    [_partida marcarLinha:1 eColuna:3];
 
-    [partida marcarLinha:3 eColuna:1];
-    [partida marcarLinha:2 eColuna:1];
+    [_partida marcarLinha:3 eColuna:1];
+    [_partida marcarLinha:2 eColuna:1];
 
-    [partida marcarLinha:2 eColuna:3];
-    [partida marcarLinha:3 eColuna:2];
+    [_partida marcarLinha:2 eColuna:3];
+    [_partida marcarLinha:3 eColuna:2];
 
-    [partida marcarLinha:3 eColuna:3];
+    [_partida marcarLinha:3 eColuna:3];
 
-    STAssertEquals(Ninguem, [partida vencedorDaPartida], nil);
+    STAssertEquals(Ninguem, [_partida vencedorDaPartida], nil);
 }
 
 - (void)testFalharAoJogarAposPartidaFinalizada
 {
-    [partida marcarLinha:1 eColuna:1];
-    [partida marcarLinha:1 eColuna:3];
+    [_partida marcarLinha:1 eColuna:1];
+    [_partida marcarLinha:1 eColuna:3];
     
-    [partida marcarLinha:2 eColuna:2];
-    [partida marcarLinha:2 eColuna:3];
+    [_partida marcarLinha:2 eColuna:2];
+    [_partida marcarLinha:2 eColuna:3];
     
-    [partida marcarLinha:3 eColuna:1];
-    [partida marcarLinha:3 eColuna:3];
+    [_partida marcarLinha:3 eColuna:1];
+    [_partida marcarLinha:3 eColuna:3];
     
     @try {
-        [partida marcarLinha:2 eColuna:1];
+        [_partida marcarLinha:2 eColuna:1];
          STFail(@"Não pode jogar após a partida finalizada!");
     }
     @catch (JogoEncerradoException *exception) {

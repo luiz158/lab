@@ -10,9 +10,9 @@
 #import <Foundation/Foundation.h>
 #import "Partida.h"
 
-@interface PartidaTests : SenTestCase {
-
-    Partida *partida;
+@interface PartidaTests : SenTestCase
+{
+    Partida *_partida;
 }
 
 @end

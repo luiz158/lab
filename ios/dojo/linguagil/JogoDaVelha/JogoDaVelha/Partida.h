@@ -9,14 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "Jogador.h"
 
-@interface Partida : NSObject {
-
-    Jogador jogador;
-    
-    Jogador tabuleiro[3][3];
+@interface Partida : NSObject
+{
+    Jogador _proximoJogador;
+    Jogador _tabuleiro[3][3];
 }
 
-- (Jogador)donoDaLinha: (int)linha eColuna: (int)coluna;
+- (Jogador)jogadorDaLinha: (int)linha eColuna: (int)coluna;
 
 - (void)marcarLinha: (int)linha eColuna: (int)coluna;
 
