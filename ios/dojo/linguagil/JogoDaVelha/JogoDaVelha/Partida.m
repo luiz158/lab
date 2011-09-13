@@ -66,7 +66,7 @@
 
 - (void)marcarLinha: (int)linha eColuna: (int)coluna
 {
-
+    
     if([self casaInvalidaNaLinha:linha eColuna:coluna]) {
         @throw [[CasaInexistenteException alloc] init];        
     }
@@ -80,7 +80,10 @@
     }
     
     _tabuleiro[linha - 1][coluna-1] = [self proximoJogador];
-    [self alternarJogador];
+    
+    if([self vencedorDaPartida] == JogoEmAndamento){
+        [self alternarJogador];        
+    }
 }
 
 
@@ -93,8 +96,8 @@
 - (Jogador)vencedorDaPartida
 {
     Jogador vencedor;
-
-
+    
+    
     if([self jogadorDaLinha:1 eColuna:1] != Ninguem && 
        [self jogadorDaLinha:1 eColuna:1] == [self jogadorDaLinha:1 eColuna:2] &&
        [self jogadorDaLinha:1 eColuna:1] == [self jogadorDaLinha:1 eColuna:3]) {
