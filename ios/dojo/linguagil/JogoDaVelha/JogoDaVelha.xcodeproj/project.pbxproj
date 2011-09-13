@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123D0E96141ED25000B9565C /* TabuleiroView.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0E95141ED25000B9565C /* TabuleiroView.m */; };
+		123D0EA1141EF15800B9565C /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 123D0E9F141EF15800B9565C /* o.png */; };
+		123D0EA2141EF15800B9565C /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 123D0EA0141EF15800B9565C /* x.png */; };
+		123D0EA5141EF19C00B9565C /* Casa12View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EA4141EF19C00B9565C /* Casa12View.m */; };
+		123D0EA8141EF29500B9565C /* Casa13View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EA7141EF29500B9565C /* Casa13View.m */; };
+		123D0EB5141EF32B00B9565C /* Casa21View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EAA141EF32900B9565C /* Casa21View.m */; };
+		123D0EB6141EF32B00B9565C /* Casa22View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EAC141EF32900B9565C /* Casa22View.m */; };
+		123D0EB7141EF32B00B9565C /* Casa23View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EAE141EF32A00B9565C /* Casa23View.m */; };
+		123D0EB8141EF32B00B9565C /* Casa31View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EB0141EF32A00B9565C /* Casa31View.m */; };
+		123D0EB9141EF32B00B9565C /* Casa32View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EB2141EF32A00B9565C /* Casa32View.m */; };
+		123D0EBA141EF32B00B9565C /* Casa33View.m in Sources */ = {isa = PBXBuildFile; fileRef = 123D0EB4141EF32A00B9565C /* Casa33View.m */; };
 		12D4A909141E45A700FD99F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A908141E45A700FD99F3 /* UIKit.framework */; };
 		12D4A90B141E45A700FD99F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90A141E45A700FD99F3 /* Foundation.framework */; };
 		12D4A90D141E45A700FD99F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */; };
@@ -41,6 +52,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		123D0E94141ED25000B9565C /* TabuleiroView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabuleiroView.h; sourceTree = "<group>"; };
+		123D0E95141ED25000B9565C /* TabuleiroView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabuleiroView.m; sourceTree = "<group>"; };
+		123D0E9F141EF15800B9565C /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = o.png; path = Resources/o.png; sourceTree = "<group>"; };
+		123D0EA0141EF15800B9565C /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x.png; path = Resources/x.png; sourceTree = "<group>"; };
+		123D0EA3141EF19C00B9565C /* Casa12View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa12View.h; sourceTree = "<group>"; };
+		123D0EA4141EF19C00B9565C /* Casa12View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa12View.m; sourceTree = "<group>"; };
+		123D0EA6141EF29500B9565C /* Casa13View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa13View.h; sourceTree = "<group>"; };
+		123D0EA7141EF29500B9565C /* Casa13View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa13View.m; sourceTree = "<group>"; };
+		123D0EA9141EF32900B9565C /* Casa21View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa21View.h; sourceTree = "<group>"; };
+		123D0EAA141EF32900B9565C /* Casa21View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa21View.m; sourceTree = "<group>"; };
+		123D0EAB141EF32900B9565C /* Casa22View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa22View.h; sourceTree = "<group>"; };
+		123D0EAC141EF32900B9565C /* Casa22View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa22View.m; sourceTree = "<group>"; };
+		123D0EAD141EF32A00B9565C /* Casa23View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa23View.h; sourceTree = "<group>"; };
+		123D0EAE141EF32A00B9565C /* Casa23View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa23View.m; sourceTree = "<group>"; };
+		123D0EAF141EF32A00B9565C /* Casa31View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa31View.h; sourceTree = "<group>"; };
+		123D0EB0141EF32A00B9565C /* Casa31View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa31View.m; sourceTree = "<group>"; };
+		123D0EB1141EF32A00B9565C /* Casa32View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa32View.h; sourceTree = "<group>"; };
+		123D0EB2141EF32A00B9565C /* Casa32View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa32View.m; sourceTree = "<group>"; };
+		123D0EB3141EF32A00B9565C /* Casa33View.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Casa33View.h; sourceTree = "<group>"; };
+		123D0EB4141EF32A00B9565C /* Casa33View.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Casa33View.m; sourceTree = "<group>"; };
 		12D4A904141E45A700FD99F3 /* JogoDaVelha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JogoDaVelha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D4A908141E45A700FD99F3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		12D4A90A141E45A700FD99F3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +155,24 @@
 			children = (
 				12D4A989141E96BC00FD99F3 /* Casa11View.h */,
 				12D4A98A141E96BC00FD99F3 /* Casa11View.m */,
+				123D0EA3141EF19C00B9565C /* Casa12View.h */,
+				123D0EA4141EF19C00B9565C /* Casa12View.m */,
+				123D0EA6141EF29500B9565C /* Casa13View.h */,
+				123D0EA7141EF29500B9565C /* Casa13View.m */,
+				123D0EA9141EF32900B9565C /* Casa21View.h */,
+				123D0EAA141EF32900B9565C /* Casa21View.m */,
+				123D0EAB141EF32900B9565C /* Casa22View.h */,
+				123D0EAC141EF32900B9565C /* Casa22View.m */,
+				123D0EAD141EF32A00B9565C /* Casa23View.h */,
+				123D0EAE141EF32A00B9565C /* Casa23View.m */,
+				123D0EAF141EF32A00B9565C /* Casa31View.h */,
+				123D0EB0141EF32A00B9565C /* Casa31View.m */,
+				123D0EB1141EF32A00B9565C /* Casa32View.h */,
+				123D0EB2141EF32A00B9565C /* Casa32View.m */,
+				123D0EB3141EF32A00B9565C /* Casa33View.h */,
+				123D0EB4141EF32A00B9565C /* Casa33View.m */,
+				123D0E94141ED25000B9565C /* TabuleiroView.h */,
+				123D0E95141ED25000B9565C /* TabuleiroView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -147,11 +196,21 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		123D0E99141EEF6800B9565C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				123D0E9F141EF15800B9565C /* o.png */,
+				123D0EA0141EF15800B9565C /* x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		12D4A8F9141E45A700FD99F3 = {
 			isa = PBXGroup;
 			children = (
 				12D4A986141E945900FD99F3 /* UI */,
 				12D4A90E141E45A700FD99F3 /* Core */,
+				123D0E99141EEF6800B9565C /* Resources */,
 				12D4A930141E45A800FD99F3 /* Tests */,
 				12D4A907141E45A700FD99F3 /* Frameworks */,
 				12D4A905141E45A700FD99F3 /* Products */,
@@ -313,6 +372,8 @@
 				12D4A913141E45A800FD99F3 /* InfoPlist.strings in Resources */,
 				12D4A91C141E45A800FD99F3 /* MainWindow.xib in Resources */,
 				12D4A922141E45A800FD99F3 /* JogoDaVelhaViewController.xib in Resources */,
+				123D0EA1141EF15800B9565C /* o.png in Resources */,
+				123D0EA2141EF15800B9565C /* x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +417,15 @@
 				12D4A981141E6BFA00FD99F3 /* CasaInexistenteException.m in Sources */,
 				12D4A984141E8E2600FD99F3 /* JogoEncerradoException.m in Sources */,
 				12D4A98B141E96BC00FD99F3 /* Casa11View.m in Sources */,
+				123D0E96141ED25000B9565C /* TabuleiroView.m in Sources */,
+				123D0EA5141EF19C00B9565C /* Casa12View.m in Sources */,
+				123D0EA8141EF29500B9565C /* Casa13View.m in Sources */,
+				123D0EB5141EF32B00B9565C /* Casa21View.m in Sources */,
+				123D0EB6141EF32B00B9565C /* Casa22View.m in Sources */,
+				123D0EB7141EF32B00B9565C /* Casa23View.m in Sources */,
+				123D0EB8141EF32B00B9565C /* Casa31View.m in Sources */,
+				123D0EB9141EF32B00B9565C /* Casa32View.m in Sources */,
+				123D0EBA141EF32B00B9565C /* Casa33View.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
