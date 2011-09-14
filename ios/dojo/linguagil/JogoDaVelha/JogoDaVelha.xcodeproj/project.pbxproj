@@ -242,9 +242,9 @@
 			productReference = 12D4A904141E45A700FD99F3 /* JogoDaVelha.app */;
 			productType = "com.apple.product-type.application";
 		};
-		12D4A927141E45A800FD99F3 /* JogoDaVelhaTests */ = {
+		12D4A927141E45A800FD99F3 /* Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelhaTests" */;
+			buildConfigurationList = 12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "Tests" */;
 			buildPhases = (
 				12D4A923141E45A800FD99F3 /* Sources */,
 				12D4A924141E45A800FD99F3 /* Frameworks */,
@@ -256,7 +256,7 @@
 			dependencies = (
 				12D4A973141E5D7800FD99F3 /* PBXTargetDependency */,
 			);
-			name = JogoDaVelhaTests;
+			name = Tests;
 			productName = JogoDaVelhaTests;
 			productReference = 12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */;
 			productType = "com.apple.product-type.bundle";
@@ -279,7 +279,7 @@
 			projectRoot = "";
 			targets = (
 				12D4A903141E45A700FD99F3 /* JogoDaVelha */,
-				12D4A927141E45A800FD99F3 /* JogoDaVelhaTests */,
+				12D4A927141E45A800FD99F3 /* Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -505,7 +505,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "JogoDaVelhaTests" */ = {
+		12D4A93F141E45A800FD99F3 /* Build configuration list for PBXNativeTarget "Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				12D4A940141E45A800FD99F3 /* Debug */,
