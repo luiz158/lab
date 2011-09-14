@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		123D0EA1141EF15800B9565C /* o.png in Resources */ = {isa = PBXBuildFile; fileRef = 123D0E9F141EF15800B9565C /* o.png */; };
 		123D0EA2141EF15800B9565C /* x.png in Resources */ = {isa = PBXBuildFile; fileRef = 123D0EA0141EF15800B9565C /* x.png */; };
+		128BC1AA1420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 128BC1A81420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.m */; };
+		128BC1AB1420D9CC002D5DE3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 128BC1A91420D9CC002D5DE3 /* MainWindow.xib */; };
 		12976B31141FEFF200BD7E83 /* CasaInexistenteException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12976B29141FEFF200BD7E83 /* CasaInexistenteException.m */; };
 		12976B32141FEFF200BD7E83 /* CasaJaMarcadaException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12976B2B141FEFF200BD7E83 /* CasaJaMarcadaException.m */; };
 		12976B33141FEFF200BD7E83 /* JogoEncerradoException.m in Sources */ = {isa = PBXBuildFile; fileRef = 12976B2E141FEFF200BD7E83 /* JogoEncerradoException.m */; };
@@ -19,8 +21,6 @@
 		12D4A90D141E45A700FD99F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90C141E45A700FD99F3 /* CoreGraphics.framework */; };
 		12D4A913141E45A800FD99F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A911141E45A800FD99F3 /* InfoPlist.strings */; };
 		12D4A915141E45A800FD99F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A914141E45A800FD99F3 /* main.m */; };
-		12D4A919141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */; };
-		12D4A91C141E45A800FD99F3 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D4A91A141E45A800FD99F3 /* MainWindow.xib */; };
 		12D4A92A141E45A800FD99F3 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A929141E45A800FD99F3 /* SenTestingKit.framework */; };
 		12D4A92B141E45A800FD99F3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A908141E45A700FD99F3 /* UIKit.framework */; };
 		12D4A92C141E45A800FD99F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D4A90A141E45A700FD99F3 /* Foundation.framework */; };
@@ -46,6 +46,9 @@
 /* Begin PBXFileReference section */
 		123D0E9F141EF15800B9565C /* o.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = o.png; path = Resources/o.png; sourceTree = "<group>"; };
 		123D0EA0141EF15800B9565C /* x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = x.png; path = Resources/x.png; sourceTree = "<group>"; };
+		128BC1A71420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JogoDaVelhaAppDelegate.h; path = Controllers/JogoDaVelhaAppDelegate.h; sourceTree = SOURCE_ROOT; };
+		128BC1A81420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JogoDaVelhaAppDelegate.m; path = Controllers/JogoDaVelhaAppDelegate.m; sourceTree = SOURCE_ROOT; };
+		128BC1A91420D9CC002D5DE3 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainWindow.xib; path = Controllers/MainWindow.xib; sourceTree = SOURCE_ROOT; };
 		12976B28141FEFF200BD7E83 /* CasaInexistenteException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CasaInexistenteException.h; path = Models/CasaInexistenteException.h; sourceTree = SOURCE_ROOT; };
 		12976B29141FEFF200BD7E83 /* CasaInexistenteException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CasaInexistenteException.m; path = Models/CasaInexistenteException.m; sourceTree = SOURCE_ROOT; };
 		12976B2A141FEFF200BD7E83 /* CasaJaMarcadaException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CasaJaMarcadaException.h; path = Models/CasaJaMarcadaException.h; sourceTree = SOURCE_ROOT; };
@@ -66,9 +69,6 @@
 		12D4A912141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12D4A914141E45A800FD99F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12D4A916141E45A800FD99F3 /* JogoDaVelha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JogoDaVelha-Prefix.pch"; sourceTree = "<group>"; };
-		12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JogoDaVelhaAppDelegate.h; sourceTree = "<group>"; };
-		12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JogoDaVelhaAppDelegate.m; sourceTree = "<group>"; };
-		12D4A91B141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JogoDaVelhaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D4A929141E45A800FD99F3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		12D4A932141E45A800FD99F3 /* JogoDaVelhaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JogoDaVelhaTests-Info.plist"; sourceTree = "<group>"; };
@@ -109,9 +109,9 @@
 		123D0E90141EAF1200B9565C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				12D4A917141E45A800FD99F3 /* JogoDaVelhaAppDelegate.h */,
-				12D4A918141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m */,
-				12D4A91A141E45A800FD99F3 /* MainWindow.xib */,
+				128BC1A71420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.h */,
+				128BC1A81420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.m */,
+				128BC1A91420D9CC002D5DE3 /* MainWindow.xib */,
 				12E5CFE4141FF01B0010F8C2 /* TabuleiroViewController.h */,
 				12E5CFE5141FF01B0010F8C2 /* TabuleiroViewController.m */,
 				12E5CFE3141FF01B0010F8C2 /* TabuleiroViewController.xib */,
@@ -119,15 +119,6 @@
 			);
 			name = Controllers;
 			path = JogoDaVelha;
-			sourceTree = "<group>";
-		};
-		123D0E93141EAF7600B9565C /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				12D4A936141E45A800FD99F3 /* PartidaTests.h */,
-				12D4A938141E45A800FD99F3 /* PartidaTests.m */,
-			);
-			name = Classes;
 			sourceTree = "<group>";
 		};
 		123D0E99141EEF6800B9565C /* Resources */ = {
@@ -185,6 +176,7 @@
 		12D4A90E141E45A700FD99F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				12D4A90F141E45A800FD99F3 /* Supporting Files */,
 				12976B28141FEFF200BD7E83 /* CasaInexistenteException.h */,
 				12976B29141FEFF200BD7E83 /* CasaInexistenteException.m */,
 				12976B2A141FEFF200BD7E83 /* CasaJaMarcadaException.h */,
@@ -194,7 +186,6 @@
 				12976B2E141FEFF200BD7E83 /* JogoEncerradoException.m */,
 				12976B2F141FEFF200BD7E83 /* Partida.h */,
 				12976B30141FEFF200BD7E83 /* Partida.m */,
-				12D4A90F141E45A800FD99F3 /* Supporting Files */,
 			);
 			name = Model;
 			path = JogoDaVelha;
@@ -214,8 +205,9 @@
 		12D4A930141E45A800FD99F3 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				123D0E93141EAF7600B9565C /* Classes */,
 				12D4A931141E45A800FD99F3 /* Supporting Files */,
+				12D4A936141E45A800FD99F3 /* PartidaTests.h */,
+				12D4A938141E45A800FD99F3 /* PartidaTests.m */,
 			);
 			name = Tests;
 			path = JogoDaVelhaTests;
@@ -298,11 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				12D4A913141E45A800FD99F3 /* InfoPlist.strings in Resources */,
-				12D4A91C141E45A800FD99F3 /* MainWindow.xib in Resources */,
 				123D0EA1141EF15800B9565C /* o.png in Resources */,
 				123D0EA2141EF15800B9565C /* x.png in Resources */,
 				12E3D35C141F02620051E289 /* tab.png in Resources */,
 				12E5CFE6141FF01B0010F8C2 /* TabuleiroViewController.xib in Resources */,
+				128BC1AB1420D9CC002D5DE3 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,13 +331,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				12D4A915141E45A800FD99F3 /* main.m in Sources */,
-				12D4A919141E45A800FD99F3 /* JogoDaVelhaAppDelegate.m in Sources */,
 				12C3F7AC141FEF000070160F /* CellView.m in Sources */,
 				12976B31141FEFF200BD7E83 /* CasaInexistenteException.m in Sources */,
 				12976B32141FEFF200BD7E83 /* CasaJaMarcadaException.m in Sources */,
 				12976B33141FEFF200BD7E83 /* JogoEncerradoException.m in Sources */,
 				12976B34141FEFF200BD7E83 /* Partida.m in Sources */,
 				12E5CFE7141FF01B0010F8C2 /* TabuleiroViewController.m in Sources */,
+				128BC1AA1420D9CC002D5DE3 /* JogoDaVelhaAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,14 +366,6 @@
 				12D4A912141E45A800FD99F3 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		12D4A91A141E45A800FD99F3 /* MainWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				12D4A91B141E45A800FD99F3 /* en */,
-			);
-			name = MainWindow.xib;
 			sourceTree = "<group>";
 		};
 		12D4A933141E45A800FD99F3 /* InfoPlist.strings */ = {
