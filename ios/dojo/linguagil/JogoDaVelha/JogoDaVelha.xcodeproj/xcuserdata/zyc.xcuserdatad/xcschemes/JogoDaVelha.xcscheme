@@ -32,7 +32,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "12D4A927141E45A800FD99F3"
-               BuildableName = "JogoDaVelhaTests.octest"
+               BuildableName = "Tests.octest"
                BlueprintName = "Tests"
                ReferencedContainer = "container:JogoDaVelha.xcodeproj">
             </BuildableReference>
