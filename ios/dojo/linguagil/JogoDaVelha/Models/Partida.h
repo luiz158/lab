@@ -15,6 +15,8 @@
     Jogador _tabuleiro[3][3];
 }
 
+- (void)reiniciar;
+
 - (Jogador)jogadorDaLinha: (int)linha eColuna: (int)coluna;
 
 - (void)marcarLinha: (int)linha eColuna: (int)coluna;

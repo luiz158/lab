@@ -11,7 +11,37 @@
 #import "CasaInexistenteException.h"
 #import "JogoEncerradoException.h"
 
+
+@interface Partida (PrivateMethods)
+
+- (void)limparTabuleiro;
+
+- (void)alternarJogador;
+
+- (BOOL)casaInvalidaNaLinha: (int)linha eColuna: (int)coluna;
+
+- (int)quantidadeDeCasasVazias;
+
+@end
+
+
 @implementation Partida
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        [self reiniciar];
+    }
+    
+    return self;
+}
+
+- (void)reiniciar
+{
+    _proximoJogador = Jogador1;
+    [self limparTabuleiro];
+}
 
 - (void)limparTabuleiro
 {
@@ -20,18 +50,6 @@
             _tabuleiro[i][j] = Ninguem;
         }
     }
-}
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        _proximoJogador = Jogador1;
-        
-        [self limparTabuleiro];
-    }
-    
-    return self;
 }
 
 - (Jogador)jogadorDaLinha: (int)linha eColuna: (int)coluna

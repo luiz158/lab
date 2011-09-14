@@ -8,7 +8,24 @@
 
 #import "TabuleiroViewController.h"
 #import "CellView.h"
+#import "Notifications.h"
 
+
+@interface TabuleiroViewController (PrivateMethods) <UIAlertViewDelegate>
+
+- (NSString *)proximaImagem;
+
+- (NSString *)proximoJogador;
+
+- (void)atualizaProximoJogador;
+
+- (NSString *)mensagemFinal;
+
+- (void)marcar: (NSNotification *)notification;
+
+@end
+
+    
 @implementation TabuleiroViewController
 
 - (NSString *)proximaImagem
@@ -26,7 +43,7 @@
     self.title = [self proximoJogador];
 }
 
-- (NSString *)vencedor
+- (NSString *)mensagemFinal
 {
     NSString * resultado;
     
@@ -65,9 +82,17 @@
     }
     
     if([_partida vencedorDaPartida] != JogoEmAndamento){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cabô" message:[self vencedor] delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cabô" message:[self mensagemFinal] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Jogar novamente", nil];
+        
         [alert show];
+        [alert release];
     }
+}
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    [_partida reiniciar];
+    [[NSNotificationCenter defaultCenter] postNotificationName:LimparCelulas object:nil];
 }
 
 #pragma mark - View lifecycle
@@ -76,7 +101,7 @@
 {
     [super viewDidLoad];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(marcar:) name:@"teste" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(marcar:) name:MarcarCelula object:nil];
     _partida = [[Partida alloc] init];
     [self atualizaProximoJogador];
 }
@@ -86,7 +111,7 @@
     [super viewDidUnload];
     
     [_partida release];
-    [[NSNotificationCenter defaultCenter] removeObserver:self name:@"teste" object:nil];
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MarcarCelula object:nil];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

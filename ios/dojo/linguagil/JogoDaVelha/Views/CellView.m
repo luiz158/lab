@@ -4,15 +4,30 @@
 //
 //  Created by Cleverson Sacramento on 12/09/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
-//
+// 
 
 #import "CellView.h"
+#import "Notifications.h"
 
 @implementation CellView
 
--(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+- (id)initWithCoder:(NSCoder *)coder
 {
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"teste" object:self];
+    self = [super initWithCoder:coder];
+    if (self) {
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(limpar) name:LimparCelulas object:nil];
+    }
+    return self;
+}
+
+- (void)limpar
+{
+    self.image = nil;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [[NSNotificationCenter defaultCenter] postNotificationName:MarcarCelula object:self];
 }
 
 - (int)linha
@@ -47,6 +62,12 @@
     }
 
     return coluna;
+}
+
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:MarcarCelula object:nil];
+    
+    [super dealloc];
 }
 
 @end
