@@ -69,7 +69,7 @@
 		12D4A912141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		12D4A914141E45A800FD99F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		12D4A916141E45A800FD99F3 /* JogoDaVelha-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JogoDaVelha-Prefix.pch"; sourceTree = "<group>"; };
-		12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JogoDaVelhaTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		12D4A928141E45A800FD99F3 /* JogoDaVelhaTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = JogoDaVelhaTests.octest; path = Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12D4A929141E45A800FD99F3 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		12D4A932141E45A800FD99F3 /* JogoDaVelhaTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JogoDaVelhaTests-Info.plist"; sourceTree = "<group>"; };
 		12D4A934141E45A800FD99F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -181,9 +181,9 @@
 				12976B29141FEFF200BD7E83 /* CasaInexistenteException.m */,
 				12976B2A141FEFF200BD7E83 /* CasaJaMarcadaException.h */,
 				12976B2B141FEFF200BD7E83 /* CasaJaMarcadaException.m */,
-				12976B2C141FEFF200BD7E83 /* Jogador.h */,
 				12976B2D141FEFF200BD7E83 /* JogoEncerradoException.h */,
 				12976B2E141FEFF200BD7E83 /* JogoEncerradoException.m */,
+				12976B2C141FEFF200BD7E83 /* Jogador.h */,
 				12976B2F141FEFF200BD7E83 /* Partida.h */,
 				12976B30141FEFF200BD7E83 /* Partida.m */,
 			);

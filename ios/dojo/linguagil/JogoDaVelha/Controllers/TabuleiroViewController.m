@@ -23,9 +23,11 @@
 
 - (void)marcar: (NSNotification *)notification;
 
+- (void)reiniciar;
+
 @end
 
-    
+
 @implementation TabuleiroViewController
 
 - (NSString *)proximaImagem
@@ -51,11 +53,11 @@
         case Jogador1:
             resultado = @"O jogador 1 ganhou";
             break;
-
+            
         case Jogador2:
             resultado = @"O jogador 2 brocou o jogador 1";
             break;
-
+            
         default:
             resultado = @"Deu empate :P";
     }
@@ -82,7 +84,7 @@
     }
     
     if([_partida vencedorDaPartida] != JogoEmAndamento){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Cabô" message:[self mensagemFinal] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Jogar novamente", nil];
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:[self mensagemFinal] delegate:self cancelButtonTitle:nil otherButtonTitles:@"Recomeçar", nil];
         
         [alert show];
         [alert release];
@@ -91,7 +93,15 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
 {
+    if(buttonIndex == 0){
+        [self reiniciar];
+    }
+}
+
+- (void)reiniciar
+{
     [_partida reiniciar];
+    [self atualizaProximoJogador];
     [[NSNotificationCenter defaultCenter] postNotificationName:LimparCelulas object:nil];
 }
 
