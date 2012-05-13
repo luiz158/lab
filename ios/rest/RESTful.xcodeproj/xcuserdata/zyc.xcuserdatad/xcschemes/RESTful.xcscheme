@@ -13,17 +13,17 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12D4A903141E45A700FD99F3"
-               BuildableName = "JogoDaVelha.app"
-               BlueprintName = "JogoDaVelha"
-               ReferencedContainer = "container:JogoDaVelha.xcodeproj">
+               BlueprintIdentifier = "124E7AEC155FF6F300AC4664"
+               BuildableName = "libRESTful.a"
+               BlueprintName = "RESTful"
+               ReferencedContainer = "container:RESTful.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
@@ -31,32 +31,23 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "12D4A927141E45A800FD99F3"
-               BuildableName = "Tests.octest"
-               BlueprintName = "Tests"
-               ReferencedContainer = "container:JogoDaVelha.xcodeproj">
+               BlueprintIdentifier = "124E7AFC155FF6F300AC4664"
+               BuildableName = "RESTfulTests.octest"
+               BlueprintName = "RESTfulTests"
+               ReferencedContainer = "container:RESTful.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12D4A903141E45A700FD99F3"
-            BuildableName = "JogoDaVelha.app"
-            BlueprintName = "JogoDaVelha"
-            ReferencedContainer = "container:JogoDaVelha.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -66,15 +57,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "12D4A903141E45A700FD99F3"
-            BuildableName = "JogoDaVelha.app"
-            BlueprintName = "JogoDaVelha"
-            ReferencedContainer = "container:JogoDaVelha.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

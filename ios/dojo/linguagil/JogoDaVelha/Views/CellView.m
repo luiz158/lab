@@ -28,6 +28,8 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
     [[NSNotificationCenter defaultCenter] postNotificationName:MarcarCelula object:self];
+    
+    NSLog(@"XXXXXXXXXXXXXXXXXXXX");
 }
 
 - (int)linha

@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		124E7AF1155FF6F300AC4664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E7AF0155FF6F300AC4664 /* Foundation.framework */; };
+		124E7AFF155FF6F300AC4664 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E7AFE155FF6F300AC4664 /* SenTestingKit.framework */; };
+		124E7B02155FF6F300AC4664 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E7AF0155FF6F300AC4664 /* Foundation.framework */; };
+		124E7B05155FF6F300AC4664 /* libRESTful.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 124E7AED155FF6F300AC4664 /* libRESTful.a */; };
+		124E7B0B155FF6F300AC4664 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 124E7B09155FF6F300AC4664 /* InfoPlist.strings */; };
+		124E7B19155FF75500AC4664 /* Monitoramento.h in Headers */ = {isa = PBXBuildFile; fileRef = 124E7B17155FF75500AC4664 /* Monitoramento.h */; };
+		124E7B1A155FF75500AC4664 /* Monitoramento.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E7B18155FF75500AC4664 /* Monitoramento.m */; };
+		124E7B1D155FF7C300AC4664 /* MonitoramentoManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 124E7B1B155FF7C300AC4664 /* MonitoramentoManager.h */; };
+		124E7B1E155FF7C300AC4664 /* MonitoramentoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E7B1C155FF7C300AC4664 /* MonitoramentoManager.m */; };
+		124E7B21155FF8BD00AC4664 /* MonitoramentoManagerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 124E7B20155FF8BD00AC4664 /* MonitoramentoManagerTest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		124E7B03155FF6F300AC4664 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 124E7AE4155FF6F200AC4664 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 124E7AEC155FF6F300AC4664;
+			remoteInfo = RESTful;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		124E7AED155FF6F300AC4664 /* libRESTful.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRESTful.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		124E7AF0155FF6F300AC4664 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		124E7AF4155FF6F300AC4664 /* RESTful-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RESTful-Prefix.pch"; sourceTree = "<group>"; };
+		124E7AFD155FF6F300AC4664 /* RESTfulTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RESTfulTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		124E7AFE155FF6F300AC4664 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		124E7B08155FF6F300AC4664 /* RESTfulTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RESTfulTests-Info.plist"; sourceTree = "<group>"; };
+		124E7B0A155FF6F300AC4664 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		124E7B17155FF75500AC4664 /* Monitoramento.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monitoramento.h; sourceTree = "<group>"; };
+		124E7B18155FF75500AC4664 /* Monitoramento.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monitoramento.m; sourceTree = "<group>"; };
+		124E7B1B155FF7C300AC4664 /* MonitoramentoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoramentoManager.h; sourceTree = "<group>"; };
+		124E7B1C155FF7C300AC4664 /* MonitoramentoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoramentoManager.m; sourceTree = "<group>"; };
+		124E7B1F155FF8BD00AC4664 /* MonitoramentoManagerTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonitoramentoManagerTest.h; sourceTree = "<group>"; };
+		124E7B20155FF8BD00AC4664 /* MonitoramentoManagerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonitoramentoManagerTest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		124E7AEA155FF6F300AC4664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7AF1155FF6F300AC4664 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124E7AF9155FF6F300AC4664 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7AFF155FF6F300AC4664 /* SenTestingKit.framework in Frameworks */,
+				124E7B02155FF6F300AC4664 /* Foundation.framework in Frameworks */,
+				124E7B05155FF6F300AC4664 /* libRESTful.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		124E7AE2155FF6F200AC4664 = {
+			isa = PBXGroup;
+			children = (
+				124E7AF2155FF6F300AC4664 /* RESTful */,
+				124E7B06155FF6F300AC4664 /* RESTfulTests */,
+				124E7AEF155FF6F300AC4664 /* Frameworks */,
+				124E7AEE155FF6F300AC4664 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		124E7AEE155FF6F300AC4664 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				124E7AED155FF6F300AC4664 /* libRESTful.a */,
+				124E7AFD155FF6F300AC4664 /* RESTfulTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		124E7AEF155FF6F300AC4664 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				124E7AF0155FF6F300AC4664 /* Foundation.framework */,
+				124E7AFE155FF6F300AC4664 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		124E7AF2155FF6F300AC4664 /* RESTful */ = {
+			isa = PBXGroup;
+			children = (
+				124E7B17155FF75500AC4664 /* Monitoramento.h */,
+				124E7B18155FF75500AC4664 /* Monitoramento.m */,
+				124E7B1B155FF7C300AC4664 /* MonitoramentoManager.h */,
+				124E7B1C155FF7C300AC4664 /* MonitoramentoManager.m */,
+				124E7AF3155FF6F300AC4664 /* Supporting Files */,
+			);
+			path = RESTful;
+			sourceTree = "<group>";
+		};
+		124E7AF3155FF6F300AC4664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				124E7AF4155FF6F300AC4664 /* RESTful-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		124E7B06155FF6F300AC4664 /* RESTfulTests */ = {
+			isa = PBXGroup;
+			children = (
+				124E7B07155FF6F300AC4664 /* Supporting Files */,
+				124E7B1F155FF8BD00AC4664 /* MonitoramentoManagerTest.h */,
+				124E7B20155FF8BD00AC4664 /* MonitoramentoManagerTest.m */,
+			);
+			path = RESTfulTests;
+			sourceTree = "<group>";
+		};
+		124E7B07155FF6F300AC4664 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				124E7B08155FF6F300AC4664 /* RESTfulTests-Info.plist */,
+				124E7B09155FF6F300AC4664 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		124E7AEB155FF6F300AC4664 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7B19155FF75500AC4664 /* Monitoramento.h in Headers */,
+				124E7B1D155FF7C300AC4664 /* MonitoramentoManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		124E7AEC155FF6F300AC4664 /* RESTful */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124E7B11155FF6F300AC4664 /* Build configuration list for PBXNativeTarget "RESTful" */;
+			buildPhases = (
+				124E7AE9155FF6F300AC4664 /* Sources */,
+				124E7AEA155FF6F300AC4664 /* Frameworks */,
+				124E7AEB155FF6F300AC4664 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RESTful;
+			productName = RESTful;
+			productReference = 124E7AED155FF6F300AC4664 /* libRESTful.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		124E7AFC155FF6F300AC4664 /* RESTfulTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 124E7B14155FF6F300AC4664 /* Build configuration list for PBXNativeTarget "RESTfulTests" */;
+			buildPhases = (
+				124E7AF8155FF6F300AC4664 /* Sources */,
+				124E7AF9155FF6F300AC4664 /* Frameworks */,
+				124E7AFA155FF6F300AC4664 /* Resources */,
+				124E7AFB155FF6F300AC4664 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				124E7B04155FF6F300AC4664 /* PBXTargetDependency */,
+			);
+			name = RESTfulTests;
+			productName = RESTfulTests;
+			productReference = 124E7AFD155FF6F300AC4664 /* RESTfulTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		124E7AE4155FF6F200AC4664 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 124E7AE7155FF6F200AC4664 /* Build configuration list for PBXProject "RESTful" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 124E7AE2155FF6F200AC4664;
+			productRefGroup = 124E7AEE155FF6F300AC4664 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				124E7AEC155FF6F300AC4664 /* RESTful */,
+				124E7AFC155FF6F300AC4664 /* RESTfulTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		124E7AFA155FF6F300AC4664 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7B0B155FF6F300AC4664 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		124E7AFB155FF6F300AC4664 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		124E7AE9155FF6F300AC4664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7B1A155FF75500AC4664 /* Monitoramento.m in Sources */,
+				124E7B1E155FF7C300AC4664 /* MonitoramentoManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		124E7AF8155FF6F300AC4664 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				124E7B21155FF8BD00AC4664 /* MonitoramentoManagerTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		124E7B04155FF6F300AC4664 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 124E7AEC155FF6F300AC4664 /* RESTful */;
+			targetProxy = 124E7B03155FF6F300AC4664 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		124E7B09155FF6F300AC4664 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				124E7B0A155FF6F300AC4664 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		124E7B0F155FF6F300AC4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		124E7B10155FF6F300AC4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		124E7B12155FF6F300AC4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RESTful.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTful/RESTful-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		124E7B13155FF6F300AC4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/RESTful.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTful/RESTful-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		124E7B15155FF6F300AC4664 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTful/RESTful-Prefix.pch";
+				INFOPLIST_FILE = "RESTfulTests/RESTfulTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		124E7B16155FF6F300AC4664 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RESTful/RESTful-Prefix.pch";
+				INFOPLIST_FILE = "RESTfulTests/RESTfulTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		124E7AE7155FF6F200AC4664 /* Build configuration list for PBXProject "RESTful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124E7B0F155FF6F300AC4664 /* Debug */,
+				124E7B10155FF6F300AC4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		124E7B11155FF6F300AC4664 /* Build configuration list for PBXNativeTarget "RESTful" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124E7B12155FF6F300AC4664 /* Debug */,
+				124E7B13155FF6F300AC4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		124E7B14155FF6F300AC4664 /* Build configuration list for PBXNativeTarget "RESTfulTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				124E7B15155FF6F300AC4664 /* Debug */,
+				124E7B16155FF6F300AC4664 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 124E7AE4155FF6F200AC4664 /* Project object */;
+}
